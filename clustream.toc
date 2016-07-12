@@ -1,19 +1,35 @@
 \contentsline {chapter}{Hamiltonian Mechanics}{0}
-\contentsline {title}{Hamiltonian Mechanics unter besonderer Ber\"ucksichtigung der h\"ohreren Lehranstalten}{1}
+\contentsline {title}{Scalable Stream Clustering in Apache Spark}{1}
 \authcount {6}
 \contentsline {author}{Ivar Ekeland, Roger Temam, Jeffrey Dean, David Grove, Craig Chambers, Kim B. Bruce, and Elisa Bertino}{1}
-\contentsline {section}{\numberline {1}Fixed-Period Problems: The Sublinear Case}{1}
-\contentsline {subsection}{\numberline {1.1}Autonomous Systems}{1}
-\contentsline {subsubsection}{The General Case: Nontriviality.}{1}
-\contentsline {paragraph}{Notes and Comments.}{4}
-\contentsline {paragraph}{Notes and Comments.}{6}
-\contentsline {title}{Hamiltonian Mechanics2}{7}
-\authcount {2}
-\contentsline {author}{Ivar Ekeland\unskip {} \and Roger Temam\unskip {}}{7}
-\contentsline {section}{\numberline {1}Fixed-Period Problems: The Sublinear Case}{7}
-\contentsline {subsection}{\numberline {1.1}Autonomous Systems}{7}
-\contentsline {subsubsection}{The General Case: Nontriviality.}{7}
-\contentsline {paragraph}{Notes and Comments.}{10}
-\contentsline {paragraph}{Notes and Comments.}{12}
-\contentsline {chapter}{Author Index}{13}
-\contentsline {chapter}{Subject Index}{13}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Related work}{2}
+\contentsline {subsection}{\numberline {2.1}SAMOA}{2}
+\contentsline {subsection}{\numberline {2.2}StreamDM}{2}
+\contentsline {section}{\numberline {3}Basic notions}{3}
+\contentsline {subsection}{\numberline {3.1}SPARK}{3}
+\contentsline {subsection}{\numberline {3.2}SPARK streaming}{3}
+\contentsline {subsection}{\numberline {3.3}CluStream}{4}
+\contentsline {subsection}{\numberline {3.4}The CluStream framework}{4}
+\contentsline {subsection}{\numberline {3.5}Online Micro-clustering}{6}
+\contentsline {subsubsection}{Initialization}{6}
+\contentsline {subsubsection}{Classification}{7}
+\contentsline {subsubsection}{Assignation}{8}
+\contentsline {subsection}{\numberline {3.6}Offline Macro-Clustering}{8}
+\contentsline {section}{\numberline {4}Spark-CluStream}{9}
+\contentsline {section}{\numberline {5}Experiments}{9}
+\contentsline {subsection}{\numberline {5.1}Validation}{9}
+\contentsline {subsection}{\numberline {5.2}Setup}{9}
+\contentsline {subsection}{\numberline {5.3}Case 1}{10}
+\contentsline {subsection}{\numberline {5.4}Case 2}{11}
+\contentsline {subsection}{\numberline {5.5}Performance}{12}
+\contentsline {subsubsection}{Scalablity}{12}
+\contentsline {subsubsection}{Comparison against alternatives}{14}
+\contentsline {subsection}{\numberline {5.6}Clustering}{15}
+\contentsline {subsubsection}{Case 1}{16}
+\contentsline {subsubsection}{Case 2}{17}
+\contentsline {subsection}{\numberline {5.7}Performance}{19}
+\contentsline {section}{\numberline {6}Conclusions}{22}
+\contentsline {paragraph}{Notes and Comments.}{22}
+\contentsline {chapter}{Author Index}{24}
+\contentsline {chapter}{Subject Index}{24}
