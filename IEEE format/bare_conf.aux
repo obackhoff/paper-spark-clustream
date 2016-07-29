@@ -1,0 +1,124 @@
+\relax 
+\citation{clustreamOrig}
+\citation{clustreamOrig}
+\citation{samoa}
+\citation{SparkResearch}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Raleted Work}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}SAMOA}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}StreamDM}{1}}
+\citation{sparkStreaming}
+\citation{zhang96birch}
+\citation{clustreamOrig}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Basic Notions}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}SPARK}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}SPARK streaming}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Flow of data in Spark streaming}}{2}}
+\newlabel{fig:streamFlow}{{1}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces DStreams are Spark streaming's abstraction of a data stream}}{2}}
+\newlabel{fig:dstream}{{2}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}CluStream}{2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}1}The CluStream framework}{2}}
+\citation{clustreamOrig}
+\citation{clustreamOrig}
+\citation{clustreamOrig}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Example of snapshots stored for $\alpha = 2$ and $l=2$}}{3}}
+\newlabel{table:timeFrame}{{3}{3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}2}Maintaining the micro-clusters}{3}}
+\citation{clustreamOrig}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {III-C}3}Offline macro-clusterig}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Spark-CluStream}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}CluStreamOnline class (online phase)}{4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}1}Finding nearest micro-cluster}{4}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Find nearest micro-cluster.}}{4}}
+\newlabel{alg:assign}{{1}{4}}
+\newlabel{procpoints}{{\unhbox \voidb@x \hbox {IV-A}2}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}2}Processing points}{5}}
+\newlabel{handlingoutliers}{{\unhbox \voidb@x \hbox {IV-A}3}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}3}Handling outliers}{5}}
+\citation{clustreamOrig}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces handle outliers.}}{6}}
+\newlabel{alg:handleoutliers}{{2}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}CluStream class (offline phase)}{6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}1}The fakeKMeans solution}{6}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces The fakeKMeans algorithm.}}{6}}
+\newlabel{alg:fakekmeans}{{3}{6}}
+\citation{clustreamOrig}
+\citation{clustreamOrig}
+\citation{clustreamOrig}
+\citation{clustreamOrig}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Demonstration: sampling the centroids from weights}}{7}}
+\newlabel{fig:sampling}{{4}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Experiments}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-A}}Validation}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-A}1}Case 1}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Results for the original $CluStream$\cite  {clustreamOrig}. Stream speed = 2000, H=1}}{7}}
+\newlabel{fig:2000orig}{{5}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Validation results for $Spark-CluStream$. Stream speed = 2000, H=1}}{7}}
+\newlabel{fig:2000}{{6}{7}}
+\citation{clustreamOrig}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-A}2}Case 2}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Validation results: case 2. Stream speed = 200, H = 256}}{8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {\textit {Spark-CluStream}}}}{8}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Original \textit {CluStream}\cite {clustreamOrig}}}}{8}}
+\newlabel{fig:200h256}{{7}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-B}}Performance}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-B}1}Scalablity}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Scalability: Stream speed = 10000, q = 20, d = 2}}{8}}
+\newlabel{fig:perf20-2}{{8}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Scalability: Stream speed = 10000, q = 20, d = 100}}{9}}
+\newlabel{fig:perf20-100}{{9}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Scalability: Stream speed = 10000, q = 200, d = 2}}{9}}
+\newlabel{fig:perf200-2}{{10}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Scalability: Stream speed = 10000, q = 200, d = 100}}{9}}
+\newlabel{fig:perf200-100}{{11}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-B}2}Comparison against alternatives}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-C}}Clustering}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}1}Case 1}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Comparison results: all methods. Stream speed = 2000, H=1}}{10}}
+\newlabel{fig:comparison2000}{{12}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces \textit  {Spark-CluStream} without snapshots. Stream speed=2000, H=1, m=100}}{10}}
+\newlabel{fig:comparisonNoSnaps}{{13}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {V-C}2}Case 2}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Comparison results: all methods. Stream speed = 200, H=256}}{10}}
+\newlabel{fig:comparison200}{{14}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces \textit  {Spark-CluStream} without snapshots. Stream speed = 200, H=256, m=100}}{11}}
+\newlabel{fig:comparisonNoSnaps2}{{15}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {V-D}}Performance}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Processing time comparison: $q=20$, $d=2$}}{11}}
+\newlabel{fig:perfComp2}{{16}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Processing time comparison: $q=20$, $d=100$}}{11}}
+\newlabel{fig:perfComp100}{{17}{11}}
+\citation{clustreamOrig}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Scalability comparison: $q=20$, $d=2$}}{12}}
+\newlabel{fig:scalComp2}{{18}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Processing time comparison: $q=20$, $d=100$}}{12}}
+\newlabel{fig:scalComp100}{{19}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Processing time comparison for a single machine: $q=50$, $d=34$}}{12}}
+\newlabel{fig:singlemachine}{{20}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusions}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Goals achieved}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-A}}Adapt \textit  {CluStream} in Spark (Spark-CluStream)}{12}}
+\citation{*}
+\bibdata{literature.bib}
+\bibcite{spark}{1}
+\bibcite{typesafesurvey}{2}
+\bibcite{SparkResearch}{3}
+\bibcite{sparkStreaming}{4}
+\bibcite{sparkStreamingKmeans}{5}
+\bibcite{scikit-mbk}{6}
+\bibcite{mlib}{7}
+\bibcite{clustreamOrig}{8}
+\bibcite{alpaydin2014introduction}{9}
+\bibcite{Bishop:2006:PRM:1162264}{10}
+\bibcite{mapreduce}{11}
+\bibcite{7019379}{12}
+\bibcite{googleFS}{13}
+\bibcite{sparkvsmapreduce}{14}
+\bibcite{5718506}{15}
+\bibcite{fuzzymapreduce}{16}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VII-B}}Understanding its advantages and disadvantages}{13}}
+\@writefile{toc}{\contentsline {section}{References}{13}}
+\bibcite{samoa}{17}
+\bibcite{zhang96birch}{18}
+\bibstyle{plain}

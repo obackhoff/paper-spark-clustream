@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  12 JUL 2016 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  29 JUL 2016 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -373,223 +373,254 @@ L/cmm/m/it/10 ; n\OT1/cmr/m/n/10 )$
 
 [8]
 
-LaTeX Warning: Citation `clustreamOrig' on page 9 undefined on input line 493.
+LaTeX Warning: Citation `clustreamOrig' on page 9 undefined on input line 492.
 
-[9]
-
-LaTeX Warning: Citation `clustreamOrig' on page 10 undefined on input line 507.
-
-
-<./styles/2000h1-orig.png, id=69, 458.46281pt x 281.55188pt>
+<./styles/2000h1-orig.png, id=65, 458.46281pt x 281.55188pt>
 File: ./styles/2000h1-orig.png Graphic file (type png)
 
 <use ./styles/2000h1-orig.png>
-Package pdftex.def Info: ./styles/2000h1-orig.png used on input line 511.
+Package pdftex.def Info: ./styles/2000h1-orig.png used on input line 496.
 (pdftex.def)             Requested size: 275.0798pt x 168.93242pt.
 
 
-LaTeX Warning: Citation `clustreamOrig' on page 10 undefined on input line 513.
+LaTeX Warning: Citation `clustreamOrig' on page 9 undefined on input line 498.
 
 
-<./styles/2000h1.png, id=70, 578.16pt x 433.62pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./styles/2000h1.png, id=66, 578.16pt x 433.62pt>
 File: ./styles/2000h1.png Graphic file (type png)
  <use ./styles/2000h1.png>
-Package pdftex.def Info: ./styles/2000h1.png used on input line 523.
+Package pdftex.def Info: ./styles/2000h1.png used on input line 508.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `clustreamOrig' on page 10 undefined on input line 529.
+LaTeX Warning: Citation `clustreamOrig' on page 9 undefined on input line 514.
 
-
-[10 <./styles/2000h1-orig.png>] [11 <./styles/2000h1.png>]
-<./styles/200h256.png, id=79, 578.16pt x 433.62pt>
+[9] [10 <./styles/2000h1-orig.png> <./styles/2000h1.png>]
+<./styles/200h256.png, id=76, 578.16pt x 433.62pt>
 File: ./styles/200h256.png Graphic file (type png)
  <use ./styles/200h256.png>
-Package pdftex.def Info: ./styles/200h256.png used on input line 554.
+Package pdftex.def Info: ./styles/200h256.png used on input line 539.
 (pdftex.def)             Requested size: 142.26378pt x 106.69768pt.
 
-<./styles/200h256-orig.png, id=80, 466.74374pt x 316.18124pt>
+<./styles/200h256-orig.png, id=77, 466.74374pt x 316.18124pt>
 File: ./styles/200h256-orig.png Graphic file (type png)
 
 <use ./styles/200h256-orig.png>
-Package pdftex.def Info: ./styles/200h256-orig.png used on input line 556.
+Package pdftex.def Info: ./styles/200h256-orig.png used on input line 541.
 (pdftex.def)             Requested size: 142.26378pt x 96.37pt.
 
 
-LaTeX Warning: Citation `clustreamOrig' on page 12 undefined on input line 556.
+LaTeX Warning: Citation `clustreamOrig' on page 11 undefined on input line 541.
 
 
-<./styles/perf20-2.png, id=81, 844.1136pt x 619.3539pt>
+[11 <./styles/200h256.png> <./styles/200h256-orig.png>]
+<./styles/perf20-2.png, id=83, 844.1136pt x 619.3539pt>
 File: ./styles/perf20-2.png Graphic file (type png)
 
 <use ./styles/perf20-2.png>
-Package pdftex.def Info: ./styles/perf20-2.png used on input line 584.
+Package pdftex.def Info: ./styles/perf20-2.png used on input line 569.
 (pdftex.def)             Requested size: 329.20297pt x 241.54704pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./styles/200h256.png> <./styles/200h256-orig.png>]
-<./styles/perf20-100.png, id=87, 844.1136pt x 619.3539pt>
+<./styles/perf20-100.png, id=84, 844.1136pt x 619.3539pt>
 File: ./styles/perf20-100.png Graphic file (type png)
 
 <use ./styles/perf20-100.png>
-Package pdftex.def Info: ./styles/perf20-100.png used on input line 596.
+Package pdftex.def Info: ./styles/perf20-100.png used on input line 581.
 (pdftex.def)             Requested size: 337.63945pt x 247.73717pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./styles/perf200-2.png, id=88, 832.5504pt x 607.7907pt>
+<./styles/perf200-2.png, id=85, 832.5504pt x 607.7907pt>
 File: ./styles/perf200-2.png Graphic file (type png)
 
 <use ./styles/perf200-2.png>
-Package pdftex.def Info: ./styles/perf200-2.png used on input line 606.
+Package pdftex.def Info: ./styles/perf200-2.png used on input line 591.
 (pdftex.def)             Requested size: 349.66878pt x 255.27036pt.
 
-Overfull \hbox (2.54524pt too wide) in paragraph at lines 606--607
+Overfull \hbox (2.54524pt too wide) in paragraph at lines 591--592
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[13 <./styles/perf20-2.png>]
-<./styles/perf200-100.png, id=93, 844.1136pt x 619.3539pt>
+<./styles/perf200-100.png, id=86, 844.1136pt x 619.3539pt>
 File: ./styles/perf200-100.png Graphic file (type png)
 
 <use ./styles/perf200-100.png>
-Package pdftex.def Info: ./styles/perf200-100.png used on input line 615.
+Package pdftex.def Info: ./styles/perf200-100.png used on input line 600.
 (pdftex.def)             Requested size: 337.63945pt x 247.73717pt.
-
+ [12]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `validation' on page 14 undefined on input line 632.
+LaTeX Warning: Reference `validation' on page 13 undefined on input line 617.
 
-[14 <./styles/perf20-100.png>] [15 <./styles/perf200-2.png>]
 
-LaTeX Warning: Reference `validation' on page 16 undefined on input line 651.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./styles/comparison2000.png, id=103, 922.1652pt x 462.528pt>
+ [13 <./styles/perf20-2.png>] [14 <./styles/perf20-100.png>]
+
+LaTeX Warning: Reference `validation' on page 15 undefined on input line 636.
+
+<./styles/comparison2000.png, id=98, 922.1652pt x 462.528pt>
 File: ./styles/comparison2000.png Graphic file (type png)
 
 <use ./styles/comparison2000.png>
-Package pdftex.def Info: ./styles/comparison2000.png used on input line 659.
+Package pdftex.def Info: ./styles/comparison2000.png used on input line 644.
 (pdftex.def)             Requested size: 368.85954pt x 185.0079pt.
 
-Overfull \hbox (21.73601pt too wide) in paragraph at lines 659--660
+Overfull \hbox (21.73601pt too wide) in paragraph at lines 644--645
  [][] 
  []
 
-[16 <./styles/perf200-100.png>]
-<./styles/comparisonNoSnaps.png, id=108, 738.5994pt x 433.62pt>
+[15 <./styles/perf200-2.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./styles/comparisonNoSnaps.png, id=104, 738.5994pt x 433.62pt>
 File: ./styles/comparisonNoSnaps.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps.png>
-Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 672.
+Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 657.
 
 (pdftex.def)             Requested size: 295.43452pt x 173.44492pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./styles/comparison2000.png>]
-<./styles/comparison200.png, id=113, 1086.2181pt x 560.8152pt>
+[16 <./styles/perf200-100.png>]
+<./styles/comparison200.png, id=109, 1086.2181pt x 560.8152pt>
 File: ./styles/comparison200.png Graphic file (type png)
 
 <use ./styles/comparison200.png>
-Package pdftex.def Info: ./styles/comparison200.png used on input line 685.
+Package pdftex.def Info: ./styles/comparison200.png used on input line 670.
 (pdftex.def)             Requested size: 401.8944pt x 207.49837pt.
 
-Overfull \hbox (54.77086pt too wide) in paragraph at lines 685--686
+Overfull \hbox (54.77086pt too wide) in paragraph at lines 670--671
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [18 <./styles/comparisonNoSnaps.png> <./styles/comparison200.png>]
-<./styles/comparisonNoSnaps2.png, id=119, 738.5994pt x 480.5955pt>
+<./styles/comparisonNoSnaps2.png, id=110, 738.5994pt x 480.5955pt>
 File: ./styles/comparisonNoSnaps2.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps2.png>
-Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 706
+Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 691
 .
 (pdftex.def)             Requested size: 295.43452pt x 192.23479pt.
 
 
-LaTeX Warning: Reference `validation' on page 19 undefined on input line 715.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (11.57085pt too wide) in paragraph at lines 715--716
+LaTeX Warning: Reference `validation' on page 17 undefined on input line 700.
+
+
+Overfull \hbox (11.57085pt too wide) in paragraph at lines 700--701
 \OT1/cmr/m/n/10 In this sec-tion, the scal-a-bil-ity of \OT1/cmr/m/it/10 Spark-
 CluStream \OT1/cmr/m/n/10 is com-pared to that of \OT1/cmr/m/it/10 StreamDM-
  []
 
-<./styles/perfComp2.png, id=120, 521.7894pt x 403.9893pt>
+[17 <./styles/comparison2000.png>]
+<./styles/perfComp2.png, id=115, 521.7894pt x 403.9893pt>
 File: ./styles/perfComp2.png Graphic file (type png)
 
 <use ./styles/perfComp2.png>
-Package pdftex.def Info: ./styles/perfComp2.png used on input line 720.
+Package pdftex.def Info: ./styles/perfComp2.png used on input line 705.
 (pdftex.def)             Requested size: 245.24104pt x 189.87498pt.
- [19 <./styles/comparisonNoSnaps2.png>]
-<./styles/perfComp100.png, id=125, 513.117pt x 409.0482pt>
-File: ./styles/perfComp100.png Graphic file (type png)
-
-<use ./styles/perfComp100.png>
-Package pdftex.def Info: ./styles/perfComp100.png used on input line 729.
-(pdftex.def)             Requested size: 241.16502pt x 192.25267pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./styles/scalComp2.png, id=126, 578.16pt x 433.62pt>
+<./styles/perfComp100.png, id=116, 513.117pt x 409.0482pt>
+File: ./styles/perfComp100.png Graphic file (type png)
+
+<use ./styles/perfComp100.png>
+Package pdftex.def Info: ./styles/perfComp100.png used on input line 714.
+(pdftex.def)             Requested size: 241.16502pt x 192.25267pt.
+
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [18 <./styles/comparisonNoSnaps.png> <./styles/comparison200.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./styles/scalComp2.png, id=122, 578.16pt x 433.62pt>
 File: ./styles/scalComp2.png Graphic file (type png)
 
 <use ./styles/scalComp2.png>
-Package pdftex.def Info: ./styles/scalComp2.png used on input line 739.
+Package pdftex.def Info: ./styles/scalComp2.png used on input line 724.
 (pdftex.def)             Requested size: 271.73523pt x 203.80142pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./styles/scalComp100.png, id=127, 522.5121pt x 403.2666pt>
+<./styles/scalComp100.png, id=123, 522.5121pt x 403.2666pt>
 File: ./styles/scalComp100.png Graphic file (type png)
 
 <use ./styles/scalComp100.png>
-Package pdftex.def Info: ./styles/scalComp100.png used on input line 748.
+Package pdftex.def Info: ./styles/scalComp100.png used on input line 733.
 (pdftex.def)             Requested size: 245.58072pt x 189.53532pt.
-
+ [19 <./styles/comparisonNoSnaps2.png> <./styles/perfComp2.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./styles/singlemachine.png, id=128, 514.5624pt x 393.8715pt>
+[20 <./styles/perfComp100.png> <./styles/scalComp2.png>]
+<./styles/singlemachine.png, id=131, 514.5624pt x 393.8715pt>
 File: ./styles/singlemachine.png Graphic file (type png)
 
 <use ./styles/singlemachine.png>
-Package pdftex.def Info: ./styles/singlemachine.png used on input line 763.
+Package pdftex.def Info: ./styles/singlemachine.png used on input line 748.
 (pdftex.def)             Requested size: 241.84436pt x 185.11963pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (2.21498pt too wide) in paragraph at lines 768--769
+Overfull \hbox (2.21498pt too wide) in paragraph at lines 753--754
 []\OT1/cmr/m/n/10 The re-sults shown in Fig-ure 19[] are quite re-mark-able. As
  \OT1/cmr/m/it/10 StreamDM-CluStream
  []
 
+[21 <./styles/scalComp100.png>]
 
-Underfull \vbox (badness 3333) has occurred while \output is active []
+LaTeX Warning: Reference `theory' on page 22 undefined on input line 766.
 
- [20 <./styles/perfComp2.png>] [21 <./styles/perfComp100.png> <./styles/scalCom
-p2.png>]
-[22 <./styles/scalComp100.png> <./styles/singlemachine.png>] [23]
+
+LaTeX Warning: Reference `implementation' on page 22 undefined on input line 76
+6.
+
+
+LaTeX Warning: Reference `results' on page 22 undefined on input line 766.
+
+
+LaTeX Warning: Reference `validation' on page 22 undefined on input line 776.
+
+
+LaTeX Warning: Citation `clustreamOrig' on page 22 undefined on input line 776.
+
+
+
+LaTeX Warning: Reference `performance' on page 22 undefined on input line 780.
+
+[22 <./styles/singlemachine.png>]
+
+LaTeX Warning: Reference `performance' on page 23 undefined on input line 786.
+
+[23] [24]
 No file clustream.ind.
 (./subjidx.ind
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -606,7 +637,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 []\OT1/cmr/m/n/9 Exchange term 228, 231, 237, 241, 268,
  []
 
-) [24
+) [25
 
 
 ] (./clustream.aux)
@@ -615,10 +646,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2238 strings out of 493054
- 31384 string characters out of 6140586
+ 2242 strings out of 493054
+ 31430 string characters out of 6140586
  104240 words of memory out of 5000000
- 5716 multiletter control sequences out of 15000+600000
+ 5720 multiletter control sequences out of 15000+600000
  9412 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,10n,24p,731b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -640,10 +671,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt9.pfb>
-Output written on clustream.pdf (28 pages, 1021442 bytes).
+Output written on clustream.pdf (29 pages, 1034744 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

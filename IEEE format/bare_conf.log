@@ -1,0 +1,857 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  29 JUL 2016 17:19
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bare_conf.tex
+(./bare_conf.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/share/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen119
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen120
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen121
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks17
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks18
+\eqnshift@=\dimen122
+\alignsep@=\dimen123
+\tagshift@=\dimen124
+\tagwidth@=\dimen125
+\totwidth@=\dimen126
+\lineht@=\dimen127
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count104
+\c@ALG@rem=\count105
+\c@ALG@nested=\count106
+\ALG@tlm=\skip47
+\ALG@thistlm=\skip48
+\c@ALG@Lnr=\count107
+\c@ALG@blocknr=\count108
+\c@ALG@storecount=\count109
+\c@ALG@tmpcounter=\count110
+\ALG@tmplength=\skip49
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count111
+\float@exts=\toks21
+\float@box=\box29
+\@float@everytoks=\toks22
+\@floatcapt=\box30
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count112
+)
+(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip50
+\subfigcapskip=\skip51
+\subfigcaptopadj=\dimen128
+\subfigbottomskip=\skip52
+\subfigcapmargin=\dimen129
+\subfiglabelskip=\skip53
+\c@subfigure=\count113
+\c@lofdepth=\count114
+\c@subtable=\count115
+\c@lotdepth=\count116
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip54
+\subfig@bottom=\skip55
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count117
+\lst@gtempboxa=\box31
+\lst@token=\toks24
+\lst@length=\count118
+\lst@currlwidth=\dimen130
+\lst@column=\count119
+\lst@pos=\count120
+\lst@lostspace=\dimen131
+\lst@width=\dimen132
+\lst@newlines=\count121
+\lst@lineno=\count122
+\lst@maxwidth=\dimen133
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count123
+\lst@skipnumbers=\count124
+\lst@framebox=\box32
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+\c@theorem=\count125
+ (./bare_conf.aux)
+\openout1 = `bare_conf.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 368.
+LaTeX Font Info:    ... okay on input line 368.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 368.
+LaTeX Font Info:    ... okay on input line 368.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 368.
+LaTeX Font Info:    ... okay on input line 368.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 368.
+LaTeX Font Info:    ... okay on input line 368.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 368.
+LaTeX Font Info:    ... okay on input line 368.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 368.
+LaTeX Font Info:    ... okay on input line 368.
+
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count126
+\scratchdimen=\dimen134
+\scratchbox=\box33
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen135
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count132
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 424.
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no § in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no º in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no § in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no º in font ptmri7t!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 480.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 480.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 508.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 508.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+<./styles/streaming-flow.png, id=11, 516.0078pt x 115.1502pt>
+File: ./styles/streaming-flow.png Graphic file (type png)
+
+<use ./styles/streaming-flow.png>
+Package pdftex.def Info: ./styles/streaming-flow.png used on input line 621.
+(pdftex.def)             Requested size: 232.20135pt x 51.81711pt.
+
+<./styles/streaming-dstream.png, id=13, 525.6438pt x 115.1502pt>
+File: ./styles/streaming-dstream.png Graphic file (type png)
+
+<use ./styles/streaming-dstream.png>
+Package pdftex.def Info: ./styles/streaming-dstream.png used on input line 632.
+
+(pdftex.def)             Requested size: 236.53752pt x 51.81711pt.
+ [2 <./styles/streaming-flow.png> <./styles/streaming-dstream.png>]
+Underfull \hbox (badness 2735) in paragraph at lines 666--668
+[]\OT1/ptm/m/n/10 A micro-cluster for a set of d-dimensional points
+ []
+
+<./styles/pyramidalFrame.png, id=19, 304.88907pt x 124.96687pt>
+File: ./styles/pyramidalFrame.png Graphic file (type png)
+
+<use ./styles/pyramidalFrame.png>
+Package pdftex.def Info: ./styles/pyramidalFrame.png used on input line 693.
+(pdftex.def)             Requested size: 228.66623pt x 93.72491pt.
+ [3 <./styles/pyramidalFrame.png>]
+Underfull \hbox (badness 3039) in paragraph at lines 731--732
+[]\OT1/ptm/m/it/10 rdd: RDD[breeze.linalg.Vector[Double]], mcInfo:
+ []
+
+
+Overfull \hbox (6.1179pt too wide) in paragraph at lines 741--742
+[] $\OML/cmm/m/it/10 distance \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 squaredDistan
+ce\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p; mc[]:centroid\OT1/cmr/m/n/10 )$ 
+ []
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 758.
+
+
+(/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 758.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 759.
+
+
+(/usr/share/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+
+LaTeX Font Warning: Font shape `OML/ptm/bx/n' undefined
+(Font)              using `OML/ptm/m/it' instead
+(Font)              for symbol `textgreater' on input line 759.
+
+LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 759.
+LaTeX Font Info:    Font shape `OML/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 762.
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 764.
+[4]
+Overfull \hbox (24.63052pt too wide) detected at line 825
+\OML/cmm/m/it/10 dataIn:mapValues\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 :::\OT1/cmr/
+m/n/10 )\OML/cmm/m/it/10 :reduceByKey\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 aggregat
+eFunction\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (8.19057pt too wide) detected at line 826
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 id[]; \OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 p[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 + \OML/
+cmm/m/it/10 :::; p[]Ip[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 p[]Ip[] \OT1/cmr/m/
+n/10 + \OML/cmm/m/it/10 :::; \OT1/cmr/m/n/10 1 + 1 + \OML/cmm/m/it/10 :::\OT1/c
+mr/m/n/10 ))\OML/cmm/m/it/10 ; :::\OMS/cmsy/m/n/10 g
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 828--829
+[]\OT1/ptm/m/n/10 The $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 key; value\OT1/cmr/m/n
+/10 )$ \OT1/ptm/m/n/10 pairs are im-por-tant here be-cause
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 828--829
+\OT1/ptm/m/n/10 are "re-duced" to-gether, re-sult-ing in tu-ples con-tain-ing
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 837--838
+[]\OT1/ptm/m/n/10 If the point lies within the re-stric-tion re-gard-
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 837--838
+\OT1/ptm/m/n/10 ing the RMSD for its near-est micro-cluster in
+ []
+
+[5]
+Underfull \hbox (badness 6445) in paragraph at lines 839--840
+[]\OT1/ptm/m/n/10 If none of the pre-vi-ous sce-nar-ios are vi-able,
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 839--840
+\OT1/ptm/m/n/10 then the two mirco-clusters that are clos-est to
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 839--840
+\OT1/ptm/m/n/10 each other get merged, free-ing one spot to cre-
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 839--840
+\OT1/ptm/m/n/10 ate the new micro-cluster. This is the the most
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 839--840
+\OT1/ptm/m/n/10 com-pu-ta-tion-ally ex-pen-sive sce-nario. The func-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--889
+[]\OT1/ptm/m/it/10 sc: Spark-Con-text, k: Int, n: Int,
+ []
+
+
+Overfull \hbox (32.8255pt too wide) in paragraph at lines 897--898
+[]$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 sample\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c
+enters; weights\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ; :::; sample\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 centers; weights\OT1/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+Overfull \hbox (32.30234pt too wide) in paragraph at lines 899--900
+[]$\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 sample\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c
+enters; weights\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 ; :::; sample\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 centers; weights\OT1/cmr/m/n/10 )[]\OMS/cmsy/m/n/10 g$ 
+ []
+
+[6] <./styles/sampling.png, id=43, 570.63188pt x 412.54124pt>
+File: ./styles/sampling.png Graphic file (type png)
+
+<use ./styles/sampling.png>
+Package pdftex.def Info: ./styles/sampling.png used on input line 920.
+(pdftex.def)             Requested size: 228.2487pt x 165.01357pt.
+
+Underfull \hbox (badness 3701) in paragraph at lines 946--947
+[]\OT1/ptm/m/n/10 The pa-ram-e-ters used in [8] are: $\OML/cmm/m/it/10  \OT1/c
+mr/m/n/10 = 2\OML/cmm/m/it/10 ; l \OT1/cmr/m/n/10 =
+ []
+
+<./styles/2000h1-orig.png, id=44, 458.46281pt x 281.55188pt>
+File: ./styles/2000h1-orig.png Graphic file (type png)
+
+<use ./styles/2000h1-orig.png>
+Package pdftex.def Info: ./styles/2000h1-orig.png used on input line 950.
+(pdftex.def)             Requested size: 252.15532pt x 154.854pt.
+
+Overfull \hbox (8.24406pt too wide) in paragraph at lines 950--952
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./styles/2000h1.png, id=45, 578.16pt x 433.62pt>
+File: ./styles/2000h1.png Graphic file (type png)
+ <use ./styles/2000h1.png>
+Package pdftex.def Info: ./styles/2000h1.png used on input line 962.
+(pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
+
+Overfull \hbox (16.25833pt too wide) in paragraph at lines 962--964
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./styles/sampling.png> <./styles/2000h1-orig.png> <./styles/2000h1.png>]
+Overfull \hbox (87.4587pt too wide) in paragraph at lines 975--980
+ [] 
+ []
+
+<./styles/200h256.png, id=51, 578.16pt x 433.62pt>
+File: ./styles/200h256.png Graphic file (type png)
+ <use ./styles/200h256.png>
+Package pdftex.def Info: ./styles/200h256.png used on input line 993.
+(pdftex.def)             Requested size: 116.65646pt x 87.48997pt.
+
+<./styles/200h256-orig.png, id=52, 466.74374pt x 316.18124pt>
+File: ./styles/200h256-orig.png Graphic file (type png)
+
+<use ./styles/200h256-orig.png>
+Package pdftex.def Info: ./styles/200h256-orig.png used on input line 995.
+(pdftex.def)             Requested size: 116.65646pt x 79.02098pt.
+
+Overfull \hbox (91.44482pt too wide) in paragraph at lines 1004--1009
+ [] 
+ []
+
+<./styles/perf20-2.png, id=53, 844.1136pt x 619.3539pt>
+File: ./styles/perf20-2.png Graphic file (type png)
+
+<use ./styles/perf20-2.png>
+Package pdftex.def Info: ./styles/perf20-2.png used on input line 1023.
+(pdftex.def)             Requested size: 253.23604pt x 185.8076pt.
+
+Overfull \hbox (9.32478pt too wide) in paragraph at lines 1023--1024
+ [][] 
+ []
+
+<./styles/perf20-100.png, id=54, 844.1136pt x 619.3539pt>
+File: ./styles/perf20-100.png Graphic file (type png)
+
+<use ./styles/perf20-100.png>
+Package pdftex.def Info: ./styles/perf20-100.png used on input line 1035.
+(pdftex.def)             Requested size: 253.23604pt x 185.8076pt.
+
+Overfull \hbox (9.32478pt too wide) in paragraph at lines 1035--1036
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./styles/perf200-2.png, id=55, 832.5504pt x 607.7907pt>
+File: ./styles/perf200-2.png Graphic file (type png)
+
+<use ./styles/perf200-2.png>
+Package pdftex.def Info: ./styles/perf200-2.png used on input line 1045.
+(pdftex.def)             Requested size: 249.76704pt x 182.33861pt.
+
+Overfull \hbox (5.85579pt too wide) in paragraph at lines 1045--1046
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./styles/200h256.png> <./styles/200h256-orig.png> <./styles/perf20-2.png>]
+<./styles/perf200-100.png, id=61, 844.1136pt x 619.3539pt>
+File: ./styles/perf200-100.png Graphic file (type png)
+
+<use ./styles/perf200-100.png>
+Package pdftex.def Info: ./styles/perf200-100.png used on input line 1054.
+(pdftex.def)             Requested size: 253.23604pt x 185.8076pt.
+
+Overfull \hbox (9.32478pt too wide) in paragraph at lines 1054--1055
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `validation' on page 9 undefined on input line 1071.
+
+[9 <./styles/perf20-100.png> <./styles/perf200-2.png> <./styles/perf200-100.png
+>]
+
+LaTeX Warning: Reference `validation' on page 10 undefined on input line 1090.
+
+<./styles/comparison2000.png, id=68, 922.1652pt x 462.528pt>
+File: ./styles/comparison2000.png Graphic file (type png)
+
+<use ./styles/comparison2000.png>
+Package pdftex.def Info: ./styles/comparison2000.png used on input line 1098.
+(pdftex.def)             Requested size: 276.6517pt x 138.75946pt.
+
+Overfull \hbox (32.74045pt too wide) in paragraph at lines 1098--1099
+ [][] 
+ []
+
+<./styles/comparisonNoSnaps.png, id=69, 738.5994pt x 433.62pt>
+File: ./styles/comparisonNoSnaps.png Graphic file (type png)
+
+<use ./styles/comparisonNoSnaps.png>
+Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 1111
+.
+(pdftex.def)             Requested size: 258.51366pt x 151.76927pt.
+
+Overfull \hbox (14.6024pt too wide) in paragraph at lines 1111--1112
+ [][] 
+ []
+
+<./styles/comparison200.png, id=70, 1086.2181pt x 560.8152pt>
+File: ./styles/comparison200.png Graphic file (type png)
+
+<use ./styles/comparison200.png>
+Package pdftex.def Info: ./styles/comparison200.png used on input line 1124.
+(pdftex.def)             Requested size: 271.55385pt x 140.20345pt.
+
+Overfull \hbox (27.6426pt too wide) in paragraph at lines 1124--1125
+ [][] 
+ []
+
+[10 <./styles/comparison2000.png> <./styles/comparisonNoSnaps.png> <./styles/co
+mparison200.png>]
+<./styles/comparisonNoSnaps2.png, id=77, 738.5994pt x 480.5955pt>
+File: ./styles/comparisonNoSnaps2.png Graphic file (type png)
+
+<use ./styles/comparisonNoSnaps2.png>
+Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 114
+5.
+(pdftex.def)             Requested size: 258.51366pt x 168.21094pt.
+
+Overfull \hbox (14.6024pt too wide) in paragraph at lines 1145--1146
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `validation' on page 11 undefined on input line 1154.
+
+<./styles/perfComp2.png, id=78, 521.7894pt x 403.9893pt>
+File: ./styles/perfComp2.png Graphic file (type png)
+
+<use ./styles/perfComp2.png>
+Package pdftex.def Info: ./styles/perfComp2.png used on input line 1159.
+(pdftex.def)             Requested size: 234.80305pt x 181.7935pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./styles/perfComp100.png, id=79, 513.117pt x 409.0482pt>
+File: ./styles/perfComp100.png Graphic file (type png)
+
+<use ./styles/perfComp100.png>
+Package pdftex.def Info: ./styles/perfComp100.png used on input line 1168.
+(pdftex.def)             Requested size: 230.90051pt x 184.06998pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1173--1174
+\OT1/ptm/m/n/10 shows a sig-nif-i-cant im-prove-ment over \OT1/ptm/m/it/10 Stre
+amDM-
+ []
+
+<./styles/scalComp2.png, id=80, 578.16pt x 433.62pt>
+File: ./styles/scalComp2.png Graphic file (type png)
+
+<use ./styles/scalComp2.png>
+Package pdftex.def Info: ./styles/scalComp2.png used on input line 1178.
+(pdftex.def)             Requested size: 260.16959pt x 195.1272pt.
+
+Overfull \hbox (16.25833pt too wide) in paragraph at lines 1178--1179
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./styles/scalComp100.png, id=81, 522.5121pt x 403.2666pt>
+File: ./styles/scalComp100.png Graphic file (type png)
+
+<use ./styles/scalComp100.png>
+Package pdftex.def Info: ./styles/scalComp100.png used on input line 1187.
+(pdftex.def)             Requested size: 235.12827pt x 181.46829pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./styles/comparisonNoSnaps2.png> <./styles/perfComp2.png> <./styles/perfCo
+mp100.png>] <./styles/singlemachine.png, id=86, 514.5624pt x 393.8715pt>
+File: ./styles/singlemachine.png Graphic file (type png)
+
+<use ./styles/singlemachine.png>
+Package pdftex.def Info: ./styles/singlemachine.png used on input line 1202.
+(pdftex.def)             Requested size: 241.84436pt x 185.11963pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 1211--1212
+[]\OT1/ptm/m/n/10 Another con-sid-er-a-tion to be made, is that \OT1/ptm/m/it/1
+0 Spark-
+ []
+
+[12 <./styles/scalComp2.png> <./styles/scalComp100.png> <./styles/singlemachine
+.png>] (./bare_conf.bbl
+Underfull \hbox (badness 6268) in paragraph at lines 4--7
+[]\OT1/ptm/m/n/9 Apache spark.  http://spark.apache.org/.  Ac-cessed:
+ []
+
+
+Overfull \hbox (33.44319pt too wide) in paragraph at lines 20--23
+[]\OT1/ptm/m/n/9 Apache spark, stream-ing.  http://spark.apache.org/docs/latest
+/streaming-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+[]\OT1/ptm/m/n/9 Databricks, stream-ing k-means.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+\OT1/ptm/m/n/9 https://databricks.com/blog/2015/01/28/introducing-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--34
+[]\OT1/ptm/m/n/9 Scikit-learn: Mini batch kmeans.  http://scikit-
+ []
+
+
+Overfull \hbox (15.74014pt too wide) in paragraph at lines 36--39
+[]\OT1/ptm/m/n/9 Spark's mlib: Clus-ter-ing.  http://spark.apache.org/docs/late
+st/mllib-
+ []
+
+[13])
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[14
+
+] (./bare_conf.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5269 strings out of 493054
+ 77829 string characters out of 6140586
+ 223189 words of memory out of 5000000
+ 8690 multiletter control sequences out of 15000+600000
+ 42527 words of font info for 76 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 38i,8n,42p,1109b,1519s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/ur
+w/times/utmri8a.pfb>
+Output written on bare_conf.pdf (14 pages, 997398 bytes).
+PDF statistics:
+ 149 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+

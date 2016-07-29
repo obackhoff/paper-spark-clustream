@@ -477,22 +477,7 @@ As a matter of fact, following the previous modifications, many traditional clus
 
 Two cases are analyzed in this section. These cases are two of the ones used by the developers of \textit{CluStream} to test its clustering capabilities. The tests differ in two ways: the speed of the stream and the time window used. The desired result would be to obtain comparable results for \textit{Spark-CluStream}.
 
-\subsection{Setup}
-
-These tests were performed in a virtual machine running \textit{Manjaro}, a distribution of \textit{Linux}. The specifications of the virtual machine are:
-
-\begin{itemize}
- \item \textit{Intel} i7-4500U 64-bit processor @ 1.80-2.40 GHZ.
- \item Hypervisor vendor: \textit{VMware}.
- \item Two real cores with hyper-threading for a total of 4 virtual cores.
- \item 4GB of RAM.
- \item \textit{Linux-Kernel} version 4.1.
-\end{itemize}
-
-
-The dataset used for this test is the reduced version of the \textit{Network Intrusion Detector} dataset, which was used for the \textit{Knowledge Discovery and Data Mining Tools Competition} in 1999\footnote{More information: https://archive.ics.uci.edu/ml/datasets/KDD+Cup+1999+Data}. The same dataset was used for in the original paper when the \textit{CluStream} method was published\cite{clustreamOrig} in order to test the accuracy of it and to compare it to an older method \textit{STREAM}. This dataset has nearly 500000 entries with a total of 42 attributes each, from which 34 are numerical. Only the numerical attributes are being used in this test and the goal is to find 5 clusters.
-
-\subsection{Case 1}
+\subsubsection{Case 1}
 
 The first case uses a stream speed of 2000 points per time unit and a horizon $H=1$. The dataset contains exactly 494021 points, meaning that the online phase would require $\frac{494021}{2000} \approx 247$ time units to complete.
 
@@ -542,7 +527,7 @@ Spark-CluStream & $3.099\times10^5$ & $6.676\times10^{12}$ & $7.833\times10^5$ &
 
 
 
-\subsection{Case 2}
+\subsubsection{Case 2}
 
 The second case uses a stream speed of 200 points per time unit and a horizon $H=256$. The dataset contains exactly 494021 points, meaning that the online phase would require $\frac{494021}{200} \approx 2470$ time units to complete.
 
@@ -774,6 +759,35 @@ Another consideration to be made, is that  \textit{Spark-CluStream} saves a snap
 
 
 \section{Conclusions}
+
+ 
+Bringing successfully the \textit{CluStream} method to Spark has provided valuable information about how similar methods could be adapted by reviewing some of the challenges which might occur. It has also provided deep understanding of this method itself and how stream clustering differs from other clustering methods, which might not need to adapt to changing data, of Apache Spark and how distributed systems work in general, but most importantly it has provided the experience to parallelize algorithms for the specific requirements of a given problem and this knowledge itself is applicable to an uncountable number of problems.
+
+The typical workflow for doing so should follow a similar structure: from understanding the problem as described in chapter \ref{theory}, to going through the process of achieving the desired goals as shown in chapters \ref{implementation} and \ref{results}.
+
+\section{Goals review}
+
+It is rewarding to conclude that the goals were met satisfactorily. Here, the conclusions for every one of them.
+
+\subsection{Adapt \textit{CluStream} in Spark (Spark-CluStream)}
+
+This is the main goal of this thesis, and none of the other goals would have been met if this one failed. Adapting \textit{CluStream} in Spark brought many challenges: one being the fact that the streaming library in Spark handles streams as batches and not individual points with time stamps, forcing this adaptation to change a few things that differentiate it from the original method, and the other one being the parallelization of the algorithm in order to take advantage of distributed computing.
+
+Even though this adaptation changed the way data is processed, i.e. processing the stream in batches of data in parallel as much as possible, the results indicate that this was done correctly and the proof of that lies in the validation section \ref{validation}: it showed that it is not only capable of correctly clustering streams of data but it was able to match the quality of the original method described in \cite{clustreamOrig}. It was shown for two different scenarios that this is true, when comparing the errors obtained after replicating the tests done by the authors of \textit{CluStream}.
+
+\subsection{Understanding its advantages and disadvantages}
+
+The second most important goal was to make this adaptation as scalable as possible, and for this reason many tests were made using different scenarios. There are clearly cases where it is not fully scalable, as shown in section \ref{performance}, but for the most part it was shown comparable scalability as some of the alternatives for Spark, including a method native of Spark and a similar method developed by a team from \textit{Huawei} for a set of stream mining algorithms called \textit{StreamDM}.
+
+Some of its limitations were also understood , such as bottlenecks that might reduce the scalability and performance in general, such as:
+
+\begin{itemize}
+ \item Outliers: handling with outliers in sequential code is expected to be a bottleneck, depending on the stream, a batch of data might contain points which do not belong to any micro-cluster and therefore, they have to be handled differently. Depending on the number of outliers, in particular the ones which require two micro-clusters to be merged, the total processing time for that batch will be affected negatively. In general there are three situations where this would normally occur: at the beginning of the stream if the initialization is not accurate, when the incoming data is very noisy and when the data dramatically changes.
+ \item Communication costs: running in parallel requires certain communication between processing units. This affects the scalability negatively when few computations are required and too many processing units are used, as most of the time will be spent on communication. Also, as shown in the chapter section \ref{performance}, even when it is expected to be scalable, increasing the number of micro-clusters used and the dimensionality of the data results in a bigger amount of information to communicate, and therefore not allowing greater speedups after a certain amount of processing units. 
+\end{itemize}
+
+The results also showed that the \textit{Streaming K-Means} algorithm is the fastest among the three tested (highly optimized for Spark), delivering good results in certain scenarios as it does not count with the flexibility of \textit{CluStream} to better fit to evolving streams. \textit{Spark-CluStream} on the other hand, showed that it not only delivers quality clustering, but also outperformed the similar \textit{CluStream} implementation in \textit{StreamDM}. Quality-wise it delivered more consistent and accurate results, and performance-wise it outperformed it in most cases, including one up to around 18 times faster. 
+
 
 
 \begin{table}

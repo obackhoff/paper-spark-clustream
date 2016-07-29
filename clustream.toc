@@ -19,17 +19,19 @@
 \contentsline {section}{\numberline {4}Spark-CluStream}{9}
 \contentsline {section}{\numberline {5}Experiments}{9}
 \contentsline {subsection}{\numberline {5.1}Validation}{9}
-\contentsline {subsection}{\numberline {5.2}Setup}{9}
-\contentsline {subsection}{\numberline {5.3}Case 1}{10}
-\contentsline {subsection}{\numberline {5.4}Case 2}{11}
-\contentsline {subsection}{\numberline {5.5}Performance}{12}
+\contentsline {subsubsection}{Case 1}{9}
+\contentsline {subsubsection}{Case 2}{11}
+\contentsline {subsection}{\numberline {5.2}Performance}{12}
 \contentsline {subsubsection}{Scalablity}{12}
-\contentsline {subsubsection}{Comparison against alternatives}{14}
-\contentsline {subsection}{\numberline {5.6}Clustering}{15}
-\contentsline {subsubsection}{Case 1}{16}
+\contentsline {subsubsection}{Comparison against alternatives}{13}
+\contentsline {subsection}{\numberline {5.3}Clustering}{14}
+\contentsline {subsubsection}{Case 1}{15}
 \contentsline {subsubsection}{Case 2}{17}
-\contentsline {subsection}{\numberline {5.7}Performance}{19}
-\contentsline {section}{\numberline {6}Conclusions}{22}
-\contentsline {paragraph}{Notes and Comments.}{22}
-\contentsline {chapter}{Author Index}{24}
-\contentsline {chapter}{Subject Index}{24}
+\contentsline {subsection}{\numberline {5.4}Performance}{18}
+\contentsline {section}{\numberline {6}Conclusions}{21}
+\contentsline {section}{\numberline {7}Goals review}{22}
+\contentsline {subsection}{\numberline {7.1}Adapt \textit {CluStream} in Spark (Spark-CluStream)}{22}
+\contentsline {subsection}{\numberline {7.2}Understanding its advantages and disadvantages}{23}
+\contentsline {paragraph}{Notes and Comments.}{23}
+\contentsline {chapter}{Author Index}{25}
+\contentsline {chapter}{Subject Index}{25}
