@@ -1,0 +1,109 @@
+\begin{thebibliography}{10}
+
+\bibitem{spark}
+Apache spark.
+\newblock http://spark.apache.org/.
+\newblock Accessed: 08.07.2015.
+
+\bibitem{typesafesurvey}
+Apache spark: Preparing for the next wave of reactive big data.
+\newblock
+  https://www.typesafe.com/blog/apache-spark-preparing-for-the-next-wave-of-reactive-big-data.
+\newblock January 27, 2015.
+
+\bibitem{SparkResearch}
+Apache spark, research.
+\newblock http://spark.apache.org/research.
+\newblock Accessed: 24.01.2016.
+
+\bibitem{sparkStreaming}
+Apache spark, streaming.
+\newblock http://spark.apache.org/docs/latest/streaming-programming-guide.html.
+\newblock Accessed: 01.03.2016.
+
+\bibitem{sparkStreamingKmeans}
+Databricks, streaming k-means.
+\newblock
+  https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html.
+\newblock Accessed: 01.03.2016.
+
+\bibitem{scikit-mbk}
+Scikit-learn: Mini batch kmeans.
+\newblock http://scikit-learn.org/stable/modules/clustering.html.
+\newblock 2010-2014 BSD License, Accessed: 08.07.2015.
+
+\bibitem{mlib}
+Spark's mlib: Clustering.
+\newblock http://spark.apache.org/docs/latest/mllib-clustering.html.
+\newblock Accessed: 08.07.2015.
+
+\bibitem{clustreamOrig}
+Charu~C. Aggarwal, Jiawei Han, Jianyong Wang, and Philip~S. Yu.
+\newblock A framework for clustering evolving data streams.
+\newblock In {\em Proceedings of the 29th International Conference on Very
+  Large Data Bases - Volume 29}, VLDB '03, pages 81--92. VLDB Endowment, 2003.
+
+\bibitem{alpaydin2014introduction}
+E.~Alpaydin.
+\newblock {\em Introduction to Machine Learning}.
+\newblock Adaptive Computation and Machine Learning. MIT Press, 2014.
+
+\bibitem{Bishop:2006:PRM:1162264}
+Christopher~M. Bishop.
+\newblock {\em Pattern Recognition and Machine Learning (Information Science
+  and Statistics)}.
+\newblock Springer-Verlag New York, Inc., Secaucus, NJ, USA, 2006.
+
+\bibitem{mapreduce}
+Jeffrey Dean and Sanjay Ghemawat.
+\newblock Mapreduce: simplified data processing on large clusters.
+\newblock In {\em OSDI 04: PROCEEDINGS OF THE 6TH CONFERENCE ON SYMPOSIUM ON
+  OPERATING SYSTEMS DESIGN AND IMPLEMENTATION}. USENIX Association, 2004.
+
+\bibitem{7019379}
+D.~Garg and K.~Trivedi.
+\newblock Fuzzy k-mean clustering in mapreduce on cloud based hadoop.
+\newblock In {\em Advanced Communication Control and Computing Technologies
+  (ICACCCT), 2014 International Conference on}, pages 1607--1610, May 2014.
+
+\bibitem{googleFS}
+Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung.
+\newblock The google file system.
+\newblock In {\em Proceedings of the Nineteenth ACM Symposium on Operating
+  Systems Principles}, SOSP '03, pages 29--43, New York, NY, USA, 2003. ACM.
+
+\bibitem{sparkvsmapreduce}
+Satish Gopalani and Rohan Arora.
+\newblock Article: Comparing apache spark and map reduce with performance
+  analysis using k-means.
+\newblock {\em International Journal of Computer Applications}, 113(1):8--11,
+  March 2015.
+\newblock Full text available.
+
+\bibitem{5718506}
+Hai-Guang Li, Gong-Qing Wu, Xue-Gang Hu, Jing Zhang, Lian Li, and Xindong Wu.
+\newblock K-means clustering with bagging and mapreduce.
+\newblock In {\em System Sciences (HICSS), 2011 44th Hawaii International
+  Conference on}, pages 1--8, Jan 2011.
+
+\bibitem{fuzzymapreduce}
+SimoneA. Ludwig.
+\newblock Mapreduce-based fuzzy c-means clustering algorithm: implementation
+  and scalability.
+\newblock {\em International Journal of Machine Learning and Cybernetics},
+  pages 1--12, 2015.
+
+\bibitem{samoa}
+Gianmarco De~Francisci Morales and Albert Bifet.
+\newblock Samoa: Scalable advanced massive online analysis.
+\newblock {\em Journal of Machine Learning Research}, 16:149--153, 2015.
+
+\bibitem{zhang96birch}
+Tian Zhang, Raghu Ramakrishnan, and Miron Livny.
+\newblock {BIRCH}: an efficient data clustering method for very large
+  databases.
+\newblock In Jennifer Widom, editor, {\em SIGMOD '96: Proceedings of the 1996
+  ACM SIGMOD International Conference on Management of Data}, pages 103--114.
+  ACM Press, 1996.
+
+\end{thebibliography}

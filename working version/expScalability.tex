@@ -6,44 +6,50 @@ The scalability tests are performed in two different scenarios: one being an ana
 Any application using Spark streaming assigns one core exclusively to handle the stream, therefore the minimum number of processors required is two, this also means that using 2 processors is equivalent to using a single processor to execute the application. The number of processors mentioned in these tests is the total, but the real number of processors used for the computations is that number minus one.
 
 
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.3]{./styles/perf20-2.png}
- \caption{Scalability: Stream speed $v$= 10,000 points per timestamp, $q$ = 20, $d$ = 2.}
- \label{fig:perf20-2}
-\end{figure}
-\color{red}@Omar: Please put the d=2 and d=100 dimensions side by side in a two-columns, it is easier to compare\color{black}
+\begin{figure*}[!ht]
+        \begin{minipage}[l]{1.0\columnwidth}
+            \centering
+             \includegraphics[width=0.9\columnwidth]{./styles/perf20-2.png}
+            \caption{Dimension: $d$ = 2}
+            \label{fig:perf20-2}
+        \end{minipage}
+        \hfill{}
+        \begin{minipage}[r]{1.0\columnwidth}
+            \centering
+            \includegraphics[width=0.9\columnwidth]{./styles/perf20-100.png}
+            \caption{Dimension: $d$ = 100}\label{fig:perf20-100}
+        \end{minipage}
+        \captionsetup{labelformat=empty}
+	\caption{Scalability-dimensionality comparison for Stream speed = 10000 and q = 20}
+	 \label{fig:DS1quality}
+\end{figure*}
 
 The charts here presented show the speedup obtained by increasing the number of processors from 2 to 40, which in reality means that 1 to 39 processors where used for the computations. It also shows the average processing time for each batch of data. Because the initialization takes the most amount of time, it is also convenient to show these values without considering that process: by doing so it is possible to see what would be the expected results for a longer run, where the initialization is no longer dominant. Finally it shows the interval time for which Spark process a new batch of data, in particular all these tests processed batch every second.
 
 
-
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.3]{./styles/perf20-100.png}
- \caption{Scalability: Stream speed = 10000, q = 20, d = 100}
- \label{fig:perf20-100}
-\end{figure}
-
-
 Figure \ref{fig:perf20-2} shows that using only 20 micro-clusters and 2 dimensions has poor scalability, not even being able to perform twice as fast as for a single processor (2 in total). Even for this high speed streaming, one processor is enough to process the batches of data before a new batch is processed, meaning that the setup is stable.
 
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.3]{./styles/perf200-2.png}
- \caption{Scalability: Stream speed = 10000, q = 200, d = 2}
- \label{fig:perf200-2}
-\end{figure}
-\color{red}@Omar: Please put the d=2 and d=100 dimensions side by side in a two-columns, it is easier to compare\color{black}
+\begin{figure*}[!ht]
+        \begin{minipage}[l]{1.0\columnwidth}
+            \centering
+             \includegraphics[width=0.9\columnwidth]{./styles/perf200-2.png}
+            \caption{Dimension: $d$ = 2}
+            \label{fig:perf200-2}
+        \end{minipage}
+        \hfill{}
+        \begin{minipage}[r]{1.0\columnwidth}
+            \centering
+            \includegraphics[width=0.9\columnwidth]{./styles/perf200-100.png}
+            \caption{Dimension: $d$ = 100}\label{fig:perf200-100}
+        \end{minipage}
+        \captionsetup{labelformat=empty}     
+        \caption{Scalability-dimensionality comparison for Stream speed = 10000 and q = 200}
+        \label{fig:DS2quality}
+\end{figure*}
+
 
 Increasing the dimensionality of the points increases the computational effort needed to process the points in every batch of data and here is where \textit{Spark-CluStream} shows its scalability, which is almost linear\footnote{By linear scalability does not mean it scales with a 1 to 1 ratio, but rather linearly proportional.} for up to 16-17 processors, as it can be seen in Figure \ref{fig:perf20-100}.  From the average processing time per batch, it can be seen that from 32 to 40 processors it does not improve much anymore and the speedup does not increase quasi-linearly anymore. Here a total of 9 processors were required to stabilize \textit{Spark-CluStream}. 
 
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.3]{./styles/perf200-100.png}
- \caption{Scalability: Stream speed = 10000, q = 200, d = 100}
- \label{fig:perf200-100}
-\end{figure}
 
 Interestingly, increasing the number of micro-clusters by a factor of 10 for 2 attributes resulted in good scalability, similarly to the scenario with 20 micro-clusters and 100 attributes. Here a total of 8 processors were enough for a stable run, as shown in Figure \ref{fig:perf200-2}.
 
