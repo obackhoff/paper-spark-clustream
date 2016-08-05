@@ -1,0 +1,31 @@
+The analysis of data streams comes along with important questions: what kind of
+data is it? What important information is contained in it? How does the stream
+evolve? The key question for this project among those is the latter, i.e. dealing with
+the evolution of the stream, because prior to the development of the CluStream \cite{clustreamOrig}
+method there was not an easy to answer that question as it was one of the first to
+tackle this issue.
+
+Clustering is one of the main tasks in data mining, also often referred as an
+exploratory subtask of it. As the name implies, the objective is to find clusters, i.e.,
+collections of objects that share common properties. One can also relate this task
+to unsupervised machine learning, which intends to classify data when it lacks of
+labels, i.e., when the data instance does not indicate to which category it belongs.
+The CluStream method was developed in 2003 \cite{clustreamOrig} and its main purpose is to pro-
+vide more information than previously developed algorithms for data stream clus-
+tering by that time. It provides a solution for handling streams of data indepen-
+dently from the one that finds the final clusters. It consists of two phases (passes)
+instead of one; the first one deals with the incoming data and stores relevant in-
+formation over time and the second one is in charge of the clustering using the
+previously generated information. 
+% In other words, i) For each batch of data, statistically relevant ùsummariesù of the data are cre-
+% ated and stored at a defined pace. This storing pace follows a specific storage
+% scheme such that the disk space requirement reduces drastically; this is nec-
+% essary as in most cases for data streams one does not want to store everything
+% that arrives, one reason being the big data requires large and expensive com-
+% putational resources (processing power and storage).
+% ii) On user demand, the stored ùsummaries can be used for the end clustering
+% task as they include all necessary information to achieve accurate results.
+% Additionally, as these summaries are stored over time, a user defined time
+% horizon/window can be chosen in order to analyze the data in different time
+% periods, giving the possibility of a better understanding of the evolution of
+% the data.

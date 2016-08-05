@@ -1,0 +1,13 @@
+[main]
+.\main.tex
+
+[texfiles]
+.\intro.tex
+.\related.tex
+.\basics.tex
+.\our.tex
+.\experiments.tex
+.\conclusions.tex
+.\expScalability.tex
+.\expQuality.tex
+
