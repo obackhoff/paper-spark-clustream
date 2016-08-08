@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  5 AUG 2016 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  8 AUG 2016 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -681,10 +681,14 @@ LaTeX Warning: Reference `sec:scalability' on page 7 undefined on input line 96
 LaTeX Warning: Reference `validation' on page 8 undefined on input line 120.
 
 
-Underfull \vbox (badness 3250) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<./styles/comparison2000.png, id=51, 922.1652pt x 462.528pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./styles/2000h1-orig.png> <./styles/2000h1.png> <./styles/200h256-orig.png
+> <./styles/200h256.png>] <./styles/comparison2000.png, id=58, 922.1652pt x 462
+.528pt>
 File: ./styles/comparison2000.png Graphic file (type png)
 
 <use ./styles/comparison2000.png>
@@ -695,15 +699,7 @@ Overfull \hbox (32.74045pt too wide) in paragraph at lines 128--129
  [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./styles/2000h1-orig.png> <./styles/2000h1.png> <./styles/200h256-orig.png
-> <./styles/200h256.png>] <./styles/comparisonNoSnaps.png, id=59, 738.5994pt x 
-433.62pt>
+<./styles/comparisonNoSnaps.png, id=59, 738.5994pt x 433.62pt>
 File: ./styles/comparisonNoSnaps.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps.png>
@@ -720,6 +716,9 @@ Underfull \hbox (badness 1418) in paragraph at lines 142--142
 []\OT1/ptm/m/n/10 Figure 12: |\OT1/ptm/m/it/10 Spark-CluStream \OT1/ptm/m/n/10 
 with-out snap-shots. Stream
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <./styles/comparison200.png, id=60, 1086.2181pt x 560.8152pt>
 File: ./styles/comparison200.png Graphic file (type png)
@@ -941,7 +940,7 @@ s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main.pdf (14 pages, 1050239 bytes).
+Output written on main.pdf (14 pages, 1050365 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream

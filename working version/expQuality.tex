@@ -7,7 +7,7 @@ The SSQ for $DS1$ is shown in Figure~\ref{fig:DS1quality} for the original $CluS
 We used the same parameters as in~\cite{clustreamOrig}, i.e., $\alpha=2,l=10,InitNumber=2000,\delta=512,t=2$.
 The parameter $m$, for $m$ last points, was the only one not provided, we set it to $m=20$.
 For $DS1$, both $m$ and $\delta$ are irrelevant and the reason is that the threshold is never reached (247 time units vs. 512). 
-The number of micro-clusters was set to $q=50$, 10 times the number of final clusters ($5$). \color{red}@Omar: they suggest 50 and 5 in the original paper?\color{black}.
+The number of micro-clusters was set to $q=50$, 10 times the number of final clusters ($5$). \color{red}@Omar: they suggest 50 and 5 in the original paper?\color{black}\color{blue}@Eirini: yes, they cluster for k=5  and they recommend 10 times more mcs, they prove that with more than 10 times you don't gain much\color{black}. 
 Also, \textit{fakeKMeans()} used 5000 sampled points.
 
 For the original $CluStream$ we show the results from the original paper~\cite{clustreamOrig} - in Figure~\ref{fig:2000orig} we also see the performance of the STREAM algorithm, a modified version of $k$-Means for data 
@@ -76,7 +76,7 @@ Parameters were set as for $DS1$.
 % The measurement is the SSQ again and the same circumstances apply for this case as in the first one with the difference that here $\delta$ and $m$ are relevant. The parameter $m$ is again chosen to be 20: if 200 points are processed every time unit and there are 50 micro-clusters, assuming all 200 points should be distributed uniformly at least every 5 time units leads to $5\frac{200}{50}=20$. An in-depth analysis of the behavior of \textit{CluStream} for different $\delta$'s and $m$'s is out of the scope of this work. 
 
 % Again, the comparison is for the average SSQ. 
-The test ran 4 times for \textit{Spark-CluStream} to average the results. \color{red} Same for DS1? You run the streams x4 and reported the avg values over the 4 runs?\color{black}
+The test ran 4 times for \textit{Spark-CluStream} to average the results. \color{red} Same for DS1? You run the streams x4 and reported the avg values over the 4 runs?\color{black}\color{blue}Yes, the same process was used\color{black}
 
 The results of $CluStream$ and $Spark-CluStream$ are shown in Figure~\ref{fig:DS2quality}; again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{CluStream} are shown in Table~\ref{tab:DS2quality}.
 \begin{table*}[t]
