@@ -79,11 +79,8 @@ Parameters were set as for $DS1$.
 % The measurement is the SSQ again and the same circumstances apply for this case as in the first one with the difference that here $\delta$ and $m$ are relevant. The parameter $m$ is again chosen to be 20: if 200 points are processed every time unit and there are 50 micro-clusters, assuming all 200 points should be distributed uniformly at least every 5 time units leads to $5\frac{200}{50}=20$. An in-depth analysis of the behavior of \textit{CluStream} for different $\delta$'s and $m$'s is out of the scope of this work. 
 
 % Again, the comparison is for the average SSQ. 
-<<<<<<< HEAD
 The test ran 4 times for \textit{Spark-CluStream} to average the results in both cases, $DS1$ and $DS2$. \color{red} Same for DS1? You run the streams x4 and reported the avg values over the 4 runs?\color{black}\color{blue}Yes, the same process was used\color{black}
-=======
 
->>>>>>> 13cb400fb4b814fd911e5a7bf7f1fa616aa6bb8d
 
 The results of $CluStream$ and $Spark-CluStream$ are shown in Figure~\ref{fig:DS2quality}; again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{CluStream} are shown in Table~\ref{tab:DS2quality}.
 \begin{table*}[t]
@@ -133,13 +130,8 @@ For the \textit{decayFactor}, it is safe to set it to 0, as that would mean that
 
 \begin{figure}[h]
  \centering
-<<<<<<< HEAD
  \includegraphics[scale=0.265]{./styles/comparison2000.png}
  \caption{Comparison results: all methods. Stream speed = 2000, H=1}
-=======
- \includegraphics[scale=0.3]{./styles/comparison2000.png}
- \caption{\our vs existing implementations in Spark. DS1 (Stream speed $v = 2,000$, horizon $H=1$).}
->>>>>>> 13cb400fb4b814fd911e5a7bf7f1fa616aa6bb8d
  \label{fig:comparison2000}
 \end{figure}
 
@@ -148,13 +140,8 @@ The surprising results come from \textit{StreamDM-CluStream}, as it performs wor
 To understand this behavior, we performed another experiment with \our~without snapshots. For both methods we used a horizon $H = 1$ and $m=100$ \color{red}@Omar: what is m?\color{black}.
 \begin{figure}[h]
  \centering
-<<<<<<< HEAD
  \includegraphics[scale=0.24]{./styles/comparisonNoSnaps.png}
  \caption{\textit{Spark-CluStream} without snapshots. Stream speed=2000, H=1, m=100}
-=======
- \includegraphics[scale=0.35]{./styles/comparisonNoSnaps.png}
- \caption{\our~without snapshots vs \textit{StreamDM-CluStream}. $DS1$ (Stream speed $v=2,000$, $H=1$, $m=100$} 	
->>>>>>> 13cb400fb4b814fd911e5a7bf7f1fa616aa6bb8d
  \label{fig:comparisonNoSnaps}
 \end{figure}
 From Figure \ref{fig:comparisonNoSnaps} we can see that \our is better comparing to \textit{Spark-CluStream}, even if removing the snapshot part hurts our performance (comparing to the snapshot version).
@@ -168,13 +155,8 @@ Repeating the experiment for the stream with a speed of 200 and a horizon $H=256
 
 \begin{figure}[h!]
  \centering
-<<<<<<< HEAD
  \includegraphics[scale=0.15]{./styles/comparison200.png}
  \caption{Comparison results: all methods. Stream speed = 200, H=256}
-=======
- \includegraphics[scale=0.25]{./styles/comparison200.png}
- \caption{\our vs existing implementations in Spark. DS2 (Stream speed $v = 200$, horizon $H=256$).}
->>>>>>> 13cb400fb4b814fd911e5a7bf7f1fa616aa6bb8d
  \label{fig:comparison200}
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  9 AUG 2016 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.6.29)  9 AUG 2016 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -611,24 +611,38 @@ Underfull \hbox (badness 1418) in paragraph at lines 201--201
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./experiments.tex [6] (./expQuality.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--12
+! Undefined control sequence.
+l.1 We first compare \our
+                          to the original \clustream (Section~\ref{sec:expQu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1 ...rst compare \our to the original \clustream
+                                                   (Section~\ref{sec:expQual...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
  \OT1/ptm/m/it/10 1) Qual-ity of $\OML/cmm/m/it/10 Spark \OMS/cmsy/m/n/10 ^^@ \
 OML/cmm/m/it/10 CluStream$ \OT1/ptm/m/it/10 vs orig-i-nal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--12
-\OT1/ptm/m/n/10 We used the same pa-ram-e-ters as in [8], i.e.,
- []
+LaTeX Warning: Citation `STREAM' on page 7 undefined on input line 17.
 
 
-LaTeX Warning: Citation `STREAM' on page 7 undefined on input line 14.
+LaTeX Warning: Citation `CluStream' on page 7 undefined on input line 22.
 
 
-LaTeX Warning: Citation `CluStream' on page 7 undefined on input line 19.
-
-
-Underfull \hbox (badness 2384) in paragraph at lines 16--20
+Underfull \hbox (badness 2384) in paragraph at lines 19--23
 []\OT1/ptm/m/n/10 Figure 6[] shows the re-sults ob-tained by $\OML/cmm/m/it/10 
 Spark \OMS/cmsy/m/n/10 ^^@
  []
@@ -637,10 +651,10 @@ Spark \OMS/cmsy/m/n/10 ^^@
 File: ./styles/2000h1-orig.png Graphic file (type png)
 
 <use ./styles/2000h1-orig.png>
-Package pdftex.def Info: ./styles/2000h1-orig.png used on input line 39.
+Package pdftex.def Info: ./styles/2000h1-orig.png used on input line 42.
 (pdftex.def)             Requested size: 219.51863pt x 134.81255pt.
 
-Underfull \hbox (badness 3058) in paragraph at lines 40--40
+Underfull \hbox (badness 3058) in paragraph at lines 43--43
 []\OT1/ptm/m/n/10 Figure 5: |SSQ for the orig-i-nal $\OML/cmm/m/it/10 CluStream
 $ \OT1/ptm/m/n/10 [8] vs
  []
@@ -649,17 +663,17 @@ $ \OT1/ptm/m/n/10 [8] vs
 File: ./styles/2000h1.png Graphic file (type png)
 
 <use ./styles/2000h1.png>
-Package pdftex.def Info: ./styles/2000h1.png used on input line 45.
+Package pdftex.def Info: ./styles/2000h1.png used on input line 48.
 (pdftex.def)             Requested size: 219.51863pt x 155.90173pt.
 
 <./styles/200h256-orig.png, id=45, 466.74374pt x 316.18124pt>
 File: ./styles/200h256-orig.png Graphic file (type png)
 
 <use ./styles/200h256-orig.png>
-Package pdftex.def Info: ./styles/200h256-orig.png used on input line 62.
+Package pdftex.def Info: ./styles/200h256-orig.png used on input line 65.
 (pdftex.def)             Requested size: 219.51863pt x 148.70651pt.
 
-Underfull \hbox (badness 3058) in paragraph at lines 63--63
+Underfull \hbox (badness 3058) in paragraph at lines 66--66
 []\OT1/ptm/m/n/10 Figure 8: |SSQ for the orig-i-nal $\OML/cmm/m/it/10 CluStream
 $ \OT1/ptm/m/n/10 [8] vs
  []
@@ -668,19 +682,42 @@ $ \OT1/ptm/m/n/10 [8] vs
 File: ./styles/200h256.png Graphic file (type png)
 
 <use ./styles/200h256.png>
-Package pdftex.def Info: ./styles/200h256.png used on input line 68.
+Package pdftex.def Info: ./styles/200h256.png used on input line 71.
 (pdftex.def)             Requested size: 219.51863pt x 155.90173pt.
 
 
-LaTeX Warning: Citation `CluStream' on page 7 undefined on input line 81.
+LaTeX Warning: Citation `CluStream' on page 7 undefined on input line 85.
 
-
-LaTeX Warning: Reference `sec:scalability' on page 7 undefined on input line 96
-.
+! Undefined control sequence.
+l.100 We compare our \our
+                          against available solutions for stream clustering ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [7 <./styles/sampling.png>]
+! Undefined control sequence.
+l.126 The parameters used for \our
+                                  ~are the same as in \ref{validation}. The ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Reference `validation' on page 8 undefined on input line 120.
+
+LaTeX Warning: Reference `validation' on page 8 undefined on input line 126.
+
+! Undefined control sequence.
+l.129 ...ers to 50 in order to match those of \our
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -690,71 +727,97 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./styles/comparison2000.png Graphic file (type png)
 
 <use ./styles/comparison2000.png>
-Package pdftex.def Info: ./styles/comparison2000.png used on input line 128.
+Package pdftex.def Info: ./styles/comparison2000.png used on input line 133.
 (pdftex.def)             Requested size: 270.6101pt x 171.02252pt.
 
-Overfull \hbox (26.69885pt too wide) in paragraph at lines 128--129
+Overfull \hbox (26.69885pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./styles/2000h1-orig.png> <./styles/2000h1.png> <./styles/200h256-orig.png>
- <./styles/200h256.png>]
-<./styles/comparisonNoSnaps.png, id=59, 1088.3862pt x 648.9846pt>
+! Undefined control sequence.
+l.138 ...parison2000} it can be seen that our \our
+                                                  ~delivers results which ar...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.140 ...we performed another experiment with \our
+                                                  ~without snapshots. For bo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./styles/comparisonNoSnaps.png, id=52, 1088.3862pt x 648.9846pt>
 File: ./styles/comparisonNoSnaps.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps.png>
-Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 141.
+Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 143.
 
 (pdftex.def)             Requested size: 261.21802pt x 155.75948pt.
 
-Overfull \hbox (17.30676pt too wide) in paragraph at lines 141--142
+Overfull \hbox (17.30676pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 142--142
+Underfull \hbox (badness 1418) in paragraph at lines 144--144
 []\OT1/ptm/m/n/10 Figure 12: |\OT1/ptm/m/it/10 Spark-CluStream \OT1/ptm/m/n/10 
 with-out snap-shots. Stream
  []
 
+! Undefined control sequence.
+l.147 ...g:comparisonNoSnaps} we can see that \our
+                                                   is better comparing to \t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+[8 <./styles/2000h1-orig.png> <./styles/2000h1.png> <./styles/200h256-orig.png>
+ <./styles/200h256.png>]
 <./styles/comparison200.png, id=60, 1734.48pt x 892.5345pt>
 File: ./styles/comparison200.png Graphic file (type png)
 
 <use ./styles/comparison200.png>
-Package pdftex.def Info: ./styles/comparison200.png used on input line 156.
+Package pdftex.def Info: ./styles/comparison200.png used on input line 158.
 (pdftex.def)             Requested size: 260.16077pt x 133.87439pt.
 
-Overfull \hbox (16.24951pt too wide) in paragraph at lines 156--157
+Overfull \hbox (16.24951pt too wide) in paragraph at lines 158--159
  [][] 
  []
 
-[9 <./styles/comparison2000.png> <./styles/comparisonNoSnaps.png> <./styles/com
-parison200.png>]
-<./styles/comparisonNoSnaps2.png, id=66, 1088.3862pt x 648.9846pt>
+<./styles/comparisonNoSnaps2.png, id=61, 1088.3862pt x 648.9846pt>
 File: ./styles/comparisonNoSnaps2.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps2.png>
-Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 177
+Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 179
 .
 (pdftex.def)             Requested size: 261.21802pt x 155.75948pt.
 
-Overfull \hbox (17.30676pt too wide) in paragraph at lines 177--178
+Overfull \hbox (17.30676pt too wide) in paragraph at lines 179--180
  [][] 
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 178--178
+Underfull \hbox (badness 1418) in paragraph at lines 180--180
 []\OT1/ptm/m/n/10 Figure 14: |\OT1/ptm/m/it/10 Spark-CluStream \OT1/ptm/m/n/10 
 with-out snap-shots. Stream
  []
 
-) (./expScalability.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./expScalability.tex [9 <./styles/comparison2000.png> <./styles/comparisonNo
+Snaps.png> <./styles/comparison200.png>]
 <./styles/perf20-2.png, id=67, 844.1136pt x 619.3539pt>
 File: ./styles/perf20-2.png Graphic file (type png)
 
@@ -812,15 +875,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 amDM-
  []
 
-[10 <./styles/comparisonNoSnaps2.png>]
-
-LaTeX Warning: Text page 11 contains only floats.
-
-
-Overfull \vbox (5.92552pt too high) has occurred while \output is active []
-
-
-<./styles/scalComp2.png, id=77, 578.16pt x 433.62pt>
+<./styles/scalComp2.png, id=73, 578.16pt x 433.62pt>
 File: ./styles/scalComp2.png Graphic file (type png)
 
 <use ./styles/scalComp2.png>
@@ -834,7 +889,7 @@ Overfull \hbox (16.25833pt too wide) in paragraph at lines 87--88
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./styles/scalComp100.png, id=78, 522.5121pt x 403.2666pt>
+<./styles/scalComp100.png, id=74, 522.5121pt x 403.2666pt>
 File: ./styles/scalComp100.png Graphic file (type png)
 
 <use ./styles/scalComp100.png>
@@ -844,9 +899,15 @@ Package pdftex.def Info: ./styles/scalComp100.png used on input line 96.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11 <./styles/perf20-2.png> <./styles/perf20-100.png> <./styles/perf200-2.png> 
-<./styles/perf200-100.png> <./styles/perfComp2.png>]
-<./styles/singlemachine.png, id=86, 514.5624pt x 393.8715pt>
+[10 <./styles/comparisonNoSnaps2.png>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+
+Overfull \vbox (5.92552pt too high) has occurred while \output is active []
+
+
+<./styles/singlemachine.png, id=79, 514.5624pt x 393.8715pt>
 File: ./styles/singlemachine.png Graphic file (type png)
 
 <use ./styles/singlemachine.png>
@@ -862,8 +923,10 @@ Underfull \hbox (badness 3108) in paragraph at lines 120--121
 0 Spark-
  []
 
-)) (./conclusions.tex [12 <./styles/perfComp100.png> <./styles/scalComp2.png> <
-./styles/scalComp100.png> <./styles/singlemachine.png>]) (./main.bbl
+[11 <./styles/perf20-2.png> <./styles/perf20-100.png> <./styles/perf200-2.png> 
+<./styles/perf200-100.png> <./styles/perfComp2.png>])) (./conclusions.tex
+[12 <./styles/perfComp100.png> <./styles/scalComp2.png> <./styles/scalComp100.p
+ng> <./styles/singlemachine.png>]) (./main.bbl
 Underfull \hbox (badness 6268) in paragraph at lines 4--7
 []\OT1/ptm/m/n/9 Apache spark.  http://spark.apache.org/.  Ac-cessed:
  []
@@ -921,10 +984,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7238 strings out of 493054
- 106541 string characters out of 6140586
- 238132 words of memory out of 5000000
- 10592 multiletter control sequences out of 15000+600000
+ 7237 strings out of 493054
+ 106524 string characters out of 6140586
+ 238133 words of memory out of 5000000
+ 10591 multiletter control sequences out of 15000+600000
  44367 words of font info for 89 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  38i,11n,42p,1116b,1623s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -943,7 +1006,7 @@ s/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on main.pdf (14 pages, 1105625 bytes).
+Output written on main.pdf (14 pages, 1104929 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
