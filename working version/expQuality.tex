@@ -125,7 +125,7 @@ For \textit{Streaming K-Means}, the horizon $H=1$ was transformed to $halfLife=1
 
 \begin{figure}[h]
  \centering
- \includegraphics[scale=0.3]{./styles/comparison2000.png}
+ \includegraphics[scale=0.265]{./styles/comparison2000.png}
  \caption{Comparison results: all methods. Stream speed = 2000, H=1}
  \label{fig:comparison2000}
 \end{figure}
@@ -138,7 +138,7 @@ To find out whether this behavior is due to not using the snapshots plus offline
 
 \begin{figure}[h]
  \centering
- \includegraphics[scale=0.35]{./styles/comparisonNoSnaps.png}
+ \includegraphics[scale=0.24]{./styles/comparisonNoSnaps.png}
  \caption{\textit{Spark-CluStream} without snapshots. Stream speed=2000, H=1, m=100}
  \label{fig:comparisonNoSnaps}
 \end{figure}
@@ -153,7 +153,7 @@ Repeating the experiment for the stream with a speed of 200 and a horizon $H=256
 
 \begin{figure}[h!]
  \centering
- \includegraphics[scale=0.25]{./styles/comparison200.png}
+ \includegraphics[scale=0.15]{./styles/comparison200.png}
  \caption{Comparison results: all methods. Stream speed = 200, H=256}
  \label{fig:comparison200}
 \end{figure}
@@ -174,9 +174,8 @@ Figure \ref{fig:comparison200} shows that while \textit{Spark-CluStream} still p
 
 \begin{figure}[h]
  \centering
- \includegraphics[scale=0.35]{./styles/comparisonNoSnaps2.png}
+ \includegraphics[scale=0.24]{./styles/comparisonNoSnaps2.png}
  \caption{\textit{Spark-CluStream} without snapshots. Stream speed = 200, H=256, m=100}
  \label{fig:comparisonNoSnaps2}
 \end{figure}
-
 Testing \textit{Spark-CluStream} again without the use of snapshots, showed once more that it delivers better results than \textit{StreamDM-CluStream}, as it can be seen in Figure \ref{fig:comparisonNoSnaps2}, but the difference was reduced significantly. These results might indicate that \textit{StreamDM-CluStream} does not benefit from shorter horizons.
