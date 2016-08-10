@@ -81,26 +81,6 @@ In Figure \ref{fig:perfComp2} it can be seen that \textit{Spark-CluStream} took 
 When it comes to higher dimensions, \textit{Spark-CluStream} shows a significant improvement over \textit{StreamDM-CluStream}, which never got to the point were it was stable (below the 1 second mark), as shown in \ref{fig:perfComp100}, it seems to scale as fast as \textit{Spark-CluStream} but it was not enough even with 40 processors. 
 
 
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.45]{./styles/scalComp2.png}
- \caption{Scalability comparison: $q=20$, $d=2$}
- \label{fig:scalComp2}
-\end{figure}
-
-Surprisingly, in Figure \ref{fig:scalComp2}, \textit{StreamDM-CluStream} shows to be able to scale even for this tests, while both \textit{Spark-CluStream} and \textit{Streaming K-Means} seem to struggle taking advantage of using more processors.
-
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.45]{./styles/scalComp100.png}
- \caption{Processing time comparison: $q=20$, $d=100$}
- \label{fig:scalComp100}
-\end{figure}
-
-Figure \ref{fig:scalComp100} shows that all three algorithms are able to scale similarly for this test, being \textit{Spark-CluStream} the one having a very slight advantage as it does not slow down as quickly as the other two.
-
-
-
 Another interesting comparison, is the processing time per batch of data for a single machine, using a real dataset such as the \textit{Network Intrusion}. Here, communication is less of an issue as all the partitions lie in the same share memory space, and still there are 4 virtual cores in disposition for the algorithms to run. 
 
 The test was performed using a stream speed of 2000 points per batch and with a horizon $H=1$, to match one of the validation tests.
