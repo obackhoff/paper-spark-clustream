@@ -6,20 +6,15 @@ We first compare \our to the original \clustream (Section~\ref{sec:expQuality-vs
 \paragraph{Results for DS1}
 The SSQ for $DS1$ is shown in Figure~\ref{fig:DS1quality} for the original $CluStream$ and our $Spark-CluStream$.
 We used the same parameters as in~\cite{clustreamOrig}, i.e., $\alpha=2,l=10,InitNumber=2000,\delta=512,t=2$.
-The parameter $m$, for $m$ last points, was the only one not provided, we set it to $m=20$. $m$ is used to determine the approximate recency value as if the time of arrival of the last $m$ points was averaged.\color{blue}$<$--HERE I EXPLAIN M :)\color{black}
+The parameter $m$, for $m$ last points, was the only one not provided, we set it to $m=20$. $m$ is used to determine the approximate recency value as if the time of arrival of the last $m$ points was averaged.
 For $DS1$, both $m$ and $\delta$ are irrelevant and the reason is that the threshold is never reached (247 time units vs. 512). 
 The number of micro-clusters was set to $q=50$, 10 times the number of final clusters ($5$). 
 % \color{red}@Omar: they suggest 50 and 5 in the original paper?\color{black}\color{blue}@Eirini: yes, they  cluster for k=5  and they recommend 10 times more mcs, they prove that with more than 10 times you don't gain much\color{black}. 
 Also, \textit{fakeKMeans()} used 5,000 sampled points. 
 % We report the average results over 4 runs for our \our.
 
-For the original $CluStream$ we show the results from the original paper~\cite{clustreamOrig} - in Figure~\ref{fig:2000orig} we also see the performance of the STREAM algorithm, a modified version of $k$-Means for data 
-streams~\cite{STREAM} - the only relevant for the current work is $CluStream$.
-
-Figure~\ref{fig:2000} shows the results obtained by $Spark-CluStream$. There is a difference in the labels of the horizontal axis; while Figure~\ref{fig:2000orig} shows the time units of the stream, Figure~\ref{fig:2000orig} shows the number of points that had been streamed and processed. The reason is that Spark and the simulated stream  do not deliver the same amount of points for each time unit. %, leading to inaccurate results comparing only by clustering on certain time units. 
-A basic multiplication was used to determine the exact moment in terms of points: $2000\cdot 5 = 10000$, $2000\cdot 20 = 40000$ and so on.
-Comparing the results, it is possible to observe their similarities. We don't know the exact values for Figure~\ref{fig:2000orig} but it suffices to compare the magnitudes of the average SSQ. 
-The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{CluStream} are shown in Table~\ref{tab:DS1quality}.
+For the original $CluStream$ we show the results from the original paper \cite{clustreamOrig}, as well as the results for \our. Comparing these results, it is possible to observe their similarities. The exact values for \cite{clustreamOrig} are unknown but it suffices to compare the magnitudes of the average SSQ. 
+The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{clustreamOrig} are shown in Table~\ref{tab:DS1quality}.
 
 \begin{table*}[t]
 \centering
@@ -32,57 +27,57 @@ $Spark-CluStream$ & $3.099\times10^5$ & $6.676\times10^{12}$ & $7.833\times10^5$
   \label{tab:DS1quality}
 \end{table*}
 
-\color{red}@Omar: Can you change the y-axis labels in the second image to match the format of the first? \color{black}
-\color{red}Also, can you change the x-axis label of the second image to "Stream (\#points at clustering time))
-\color{black}\color{blue}DONE\color{black}
 
-    \begin{figure*}[!ht]
-        \begin{minipage}[l]{1.0\columnwidth}
-            \centering
-             \includegraphics[width=0.9\columnwidth]{./styles/2000h1-orig.png}
-            \caption{SSQ for the original $CluStream$~\cite{clustreamOrig} vs STREAM~\cite{}}\label{fig:2000orig}
-        \end{minipage}
-        \hfill{}
-        \begin{minipage}[r]{1.0\columnwidth}
-            \centering
-            \includegraphics[width=0.9\columnwidth]{./styles/2000h1.png}
-            \caption{SSQ for our $Spark-CluStream$}\label{fig:2000}
-        \end{minipage}
-        \captionsetup{labelformat=empty}
-        \caption{Original $CluStream$ vs SPARK-Clustream.  $DS1$ (Stream speed $v$ = 2,000, $H$=1).}
-        \label{fig:DS1quality}
-    \end{figure*}
+%     \begin{figure*}[!ht]
+%         \begin{minipage}[l]{1.0\columnwidth}
+%             \centering
+%              \includegraphics[width=0.9\columnwidth]{./styles/2000h1-orig.png}
+%             \caption{SSQ for the original $CluStream$~\cite{clustreamOrig} vs STREAM~\cite{}}\label{fig:2000orig}
+%         \end{minipage}
+%         \hfill{}
+%         \begin{minipage}[r]{1.0\columnwidth}
+%             \centering
+%             \includegraphics[width=0.9\columnwidth]{./styles/2000h1.png}
+%             \caption{SSQ for our $Spark-CluStream$}\label{fig:2000}
+%         \end{minipage}
+%         \captionsetup{labelformat=empty}
+%         \caption{Original $CluStream$ vs SPARK-Clustream.  $DS1$ (Stream speed $v$ = 2,000, $H$=1).}
+%         \label{fig:DS1quality}
+%     \end{figure*}
     
 % Figure \ref{fig:2000orig} shows the results used by the original \textit{CluStream} to show its capabilities against an older method \textit{STREAM}, which is a modified version of K-Means for data streams. The average SSQ for \textit{CluStream} is the most relevant to this test.
 
-
-
+% \addtocounter{figure}{-1}
+% 
 \paragraph{Results for DS2}
-The SSQ for $DS2$ is shown in Figure~\ref{fig:DS2quality}.
-    \begin{figure*}[!ht]
-        \begin{minipage}[l]{1.0\columnwidth}
-            \centering
-             \includegraphics[width=0.9\columnwidth]{./styles/200h256-orig.png}
-            \caption{SSQ for the original $CluStream$~\cite{clustreamOrig} vs STREAM~\cite{}}\label{fig:200h256-orig}
-        \end{minipage}
-        \hfill{}
-        \begin{minipage}[r]{1.0\columnwidth}
-            \centering
-            \includegraphics[width=0.9\columnwidth]{./styles/200h256.png}
-            \caption{SSQ for our $Spark-CluStream$}\label{fig:200h256}
-        \end{minipage}
-        \captionsetup{labelformat=empty}
-        \caption{Original $CluStream$ vs SPARK-Clustream. $DS2$ (Stream speed $v$ = 200, $H$=256).}
-        \label{fig:DS2quality}
-    \end{figure*}
+% The SSQ for $DS2$ is shown in Figure \ref{fig:DS2quality}.
+%  \begin{figure*}[!ht]
+%         \begin{minipage}[l]{1.0\columnwidth}
+%             \centering
+%              \includegraphics[width=0.9\columnwidth]{./styles/200h256-orig.png}
+%             \caption{SSQ for the original $CluStream$~\cite{clustreamOrig} vs STREAM~\cite{}}\label{fig:200h256-orig}
+%         \end{minipage}
+%         \hfill{}
+%         \begin{minipage}[r]{1.0\columnwidth}
+%             \centering
+%             \includegraphics[width=0.9\columnwidth]{./styles/200h256.png}
+%             \caption{SSQ for our $Spark-CluStream$}\label{fig:200h256}
+%         \end{minipage}
+%         \captionsetup{labelformat=empty}
+%         \caption{Original $CluStream$ vs SPARK-Clustream. $DS2$ (Stream speed $v$ = 200, $H$=256).}
+%         \label{fig:DS2quality}
+%     \end{figure*}
+%     
+%  \addtocounter{figure}{-1}
+%  
+ 
 Parameters were set as for $DS1$.
 % The measurement is the SSQ again and the same circumstances apply for this case as in the first one with the difference that here $\delta$ and $m$ are relevant. The parameter $m$ is again chosen to be 20: if 200 points are processed every time unit and there are 50 micro-clusters, assuming all 200 points should be distributed uniformly at least every 5 time units leads to $5\frac{200}{50}=20$. An in-depth analysis of the behavior of \textit{CluStream} for different $\delta$'s and $m$'s is out of the scope of this work. 
 
 % Again, the comparison is for the average SSQ. 
-The test ran 4 times for \textit{Spark-CluStream} to average the results in both cases, $DS1$ and $DS2$. \color{red} Same for DS1? You run the streams x4 and reported the avg values over the 4 runs?\color{black}\color{blue}Yes, the same process was used\color{black}
+The test ran 4 times for \textit{Spark-CluStream} to average the results in both cases, $DS1$ and $DS2$. 
+Again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on \cite{clustreamOrig} are shown in Table \ref{tab:DS2quality}.
 
-
-The results of $CluStream$ and $Spark-CluStream$ are shown in Figure~\ref{fig:DS2quality}; again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{CluStream} are shown in Table~\ref{tab:DS2quality}.
 \begin{table*}[t]
 \centering
 \begin{tabular}{|l|l|l|l|l|}\hline
@@ -107,7 +102,6 @@ We roughly overview these methods hereafter.
 
 % Before looking at the results, here are some key considerations for the other methods:
 
-\color{red}
 \begin{itemize}
  \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
  \begin{itemize}
@@ -119,7 +113,6 @@ We roughly overview these methods hereafter.
   \item This adaptation of \textit{CluStream} does not include the offline part as a separate module, meaning that it does not save snapshots and therefore it has to perform the macro-clustering process for every batch. This brings some limitations, the horizon $H$ no longer has the same meaning: the $\delta$ parameter is used instead as an equivalent, relying on the micro-clustering part only and its ability to delete and create new micro-clusters.
 \end{itemize}
 \end{itemize}
-\color{black}
 
 \paragraph{Results on $DS1$}
 For the $DS1$ stream the results are shown in Figure~\ref{fig:comparison2000}. The number of clusters $k$ is always 5 for this dataset in all the experiments.
@@ -136,7 +129,7 @@ For the \textit{decayFactor}, it is safe to set it to 0, as that would mean that
 
 From Figure~\ref{fig:comparison2000} it can be seen that our \our~delivers results which are very close to those of \textit{Streaming K-Means}. Also, \textit{Streaming K-Means} with the \textit{decayFactor} (DF) is expected to do well on this test as it could be configured to cluster exactly as it was intended for this dataset. 
 The surprising results come from \textit{StreamDM-CluStream}, as it performs worse than the rest of the methods, especially for the last two points, i.e.,  at $160k$ and $320k$.
-To understand this behavior, we performed another experiment with \our~without snapshots. For both methods we used a horizon $H = 1$ and $m=100$ \color{red}@Omar: what is m?\color{black}\color{blue}UPDATED THE EXPLANATION ABOVE \color{black}.
+To understand this behavior, we performed another experiment with \our~without snapshots. For both methods we used a horizon $H = 1$ and $m=100$.
 \begin{figure}[h]
  \centering
  \includegraphics[scale=0.24]{./styles/comparisonNoSnaps.png}
@@ -154,7 +147,7 @@ Repeating the experiment for the stream with a speed of 200 and a horizon $H=256
 
 \begin{figure}[h!]
  \centering
- \includegraphics[scale=0.15]{./styles/comparison200.png}
+ \includegraphics[scale=0.16]{./styles/comparison200.png}
  \caption{Comparison results: all methods. Stream speed = 200, H=256}
  \label{fig:comparison200}
 \end{figure}

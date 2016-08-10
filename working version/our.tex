@@ -170,12 +170,12 @@ The original \textit{CluStream} method suggests to use a slightly modified versi
    
   \vspace{10pt}
   
-  \State $centers \gets getCentersFromMC(mcs)$
-  \State $weights \gets getWeightsFromMC(mcs))$
+  \State $c \gets getCentersFromMC(mcs)$
+  \State $w \gets getWeightsFromMC(mcs))$
   \State $points \gets $
-  \item[] $\{sample(centers,weights)_1,... , sample(centers,weights)_{n}\}$
+  \item[] $\{sample(c,w)_1,... , sample(c,w)_{n}\}$
   \State $initialClusters \gets$ 
-  \item[] $ \{sample(centers,weights)_1,... , sample(centers,weights)_k\}$
+  \item[] $ \{sample(c,w)_1,... , sample(c,w)_k\}$
   \State $KMeans.setK(k)$
   \State $KMeans.setInitialModel(initialClusters)$
   \State $trainingSet \gets sc.parallelize(points)$
