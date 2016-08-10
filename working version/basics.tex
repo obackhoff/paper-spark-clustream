@@ -33,25 +33,13 @@ Whenever a point (outlier) does not fulfill the mentioned condition, then a new 
 
 The macro-clustering part is done by selecting a time window and then performing a modified version of \textit{K-Means} to cluster the center of the current micro-clusters using the size as weights. 
 
-Selecting a time window implies using two snapshots to determine what happened in such time window: the most recent snapshot is used as the base and the older one is used to determine overlapping micro-clusters. Once this is determined, a simple sustraction of their properties is performed to obtain the correct set of micro-clusters to use in the macro-clustering step.
-
 \subsection{SPARK}
-\textit{Apache Spark} is an open source framework developed in the AMPLab at the University of California, campus Berkeley\cite{SparkResearch}. It is a fast and general engine for large-scale data processing, as they describe it themselves. The original goal was to design a new programming model that supports a wider class of applications than MapReduce and at the same time keeping the fault tolerance property of it. They claim MapReduce is inefficient for applications that require a multi-pass implementation and a low latency data sharing across parallel operations, which are common in data analytics nowadays, such as: 
-
-\begin{itemize}
- \item Iterative algorithms: many machine learning and graph algorithms.
- \item Interactive data mining: multiple queries on data loaded into RAM.
- \item Streaming applications: some require an aggregate sate over time.
-\end{itemize}
-
+\textit{Apache Spark} is an open source framework developed in the AMPLab at the University of California.
 Traditionally, MapReduce and DAG engines are based on an acyclic data flow, which makes them non optimal for these applications listed above. In this flow, data has to be read from a stable storage system, like a distributed file system, and then processed on a series of jobs only to be written back to the stable storage. This process of reading and writing data on each step of the workflow causes a significant rise in computational cost.
 
 The solution proposed offers \textit{resilient distributed datasets (RDDs)} to overcome this issue efficiently. RDDs are stored in memory between queries (no need of replication) and they can rebuild themselves in case of failure as they remember how they were originally built from other datasets by transformations such as \textit{map, group, join}.
 
 \subsection{SPARK streaming}
-
-For this project, Spark streaming plays an important role as it takes a raw data stream and transforms it so that it is possible to process it within the framework. A raw stream of data can come in different forms and through different channels: from a very simple file stream, where whenever a new file is added to a specific location it is recognized as the input, a socket stream where the data comes through the network using a TCP protocol and also integrates with more elaborated sources such as \textit{Kafka, Flume, Twitter, HDFS/S3,} etc.
-
 
 \begin{figure}[h!]
  \centering
