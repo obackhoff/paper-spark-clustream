@@ -22,22 +22,6 @@ This method is built over a few ideas that need to be conceptualized, which will
  \item \textbf{Pyramidal time frame}: micro-clusters are stored periodically following a pyramidal pattern. This allows a nice tradeoff between the ability to store large amounts of information while giving the user the possible to work with different time horizons without loosing too much precision. The statistical summaries stored are used by the offline component to compute finally the macro-clusters which are the actual clusters the user intended to get.
 \end{itemize}
 
-It is assumed that a data stream comes in the form of multi-dimensional records $\bar X_1 ... \bar X_k ...$ where $\bar X_i = (x^1_i ... x^d_i)$.
-
-\begin{definition}\cite{clustreamOrig}
-
-A micro-cluster for a set of d-dimensional points $X_{i_1} ...X_{i_n}$ with time stamps
-$T_{i_1} ...T_{i_n}$ is defined as the $2 \cdot d + 3)$ tuple $(\overline{CF2^x},\overline{CF1^x},CF2^t,CF1^t,n)$, wherein $\overline{CF2^x}$ and $\overline{CF1^x}$ each correspond to a vector of d entries. The definition of each of these entries is as follows: 
-
-\begin{itemize}
- \item For each dimension, the sum of the squares of the data values is maintained in $\overline{CF2^x}$. Thus, $\overline{CF2^x}$ contains d values. The p-th entry of $\overline{CF2^x}$ is equal to $\sum^n_{j=1} (x^p_{i_j})^2$. 
- \item For each dimension, the sum of the data values is maintained in $\overline{CF1^x}$. Thus, $\overline{CF1^x}$ contains d values. The p-th entry of $\overline{CF1^x}$ is equal to $\sum^n_{j=1} x^p_{i_j}$.
- \item The sum of the squares of the time stamps $T_{i_1} ...T_{i_n}$ is maintained in $CF2^t$.
- \item The sum of the time stamps $T_{i_1} ...T_{i_n}$ is maintained in $CF1^t$.
- \item The number of data points is maintained in n.
-\end{itemize}
-
-\end{definition}
 
 \subsubsection{Maintaining the micro-clusters}
 

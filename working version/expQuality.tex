@@ -92,7 +92,7 @@ Spark-CluStream & $5.402\times10^{13}$ & $5.143\times10^{4}$ & $1.892\times10^{1
 %------------------------------------------------------------------------------------------------------
 \subsubsection{$Spark-CluStream$ vs other clustering approaches in SPARK}
 \label{sec:expQuality-vs-SPARK}
-We compare our \our against available solutions for stream clustering in Spark and in particular against \textit{Streaming K-Means} and \textit{StreamDM-CluStream}.
+We compare our \our  against available solutions for stream clustering in Spark and in particular against \textit{Streaming K-Means} and \textit{StreamDM-CluStream}.
 % , which is another adaptation of \textit{CluStream} for Spark. 
 We report here on their clustering quality, the efficiency issue is discussed in Section~\ref{sec:expScalability}.
 
@@ -145,12 +145,6 @@ For the $DS2$ stream the results are shown in Figure~\ref{fig:comparison2000}.
 
 Repeating the experiment for the stream with a speed of 200 and a horizon $H=256$ revealed unexpected results. While most parameters for all methods remained the same, for \textit{Streaming K-Means} a new $halfLife$ has to be calculated: multiplying the speed of the stream to the horizon, $200\cdot 256=51200$ shows how many points of the stream are supposed to be clustered at each time, indicating that the parameter should be set to $halfLife=25600$. 
 
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.16]{./styles/comparison200.png}
- \caption{Comparison results: all methods. Stream speed = 200, H=256}
- \label{fig:comparison200}
-\end{figure}
 
 The \textit{decayFactor} strategy at first seems that does not work for such experiment, but considering that the total number of entries is known and exactly the marks at which the clustering process happens, it is possible to calculate an average value to use as a $decayFactor$: 
 
@@ -163,13 +157,13 @@ The \textit{decayFactor} strategy at first seems that does not work for such exp
 
 Averaging those ratios leads to a \textit{decayFactor = 0.2015}, which is a way to determine how important the old data is in comparison to the new one.
 
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.16]{./styles/comparison200.png}
+ \caption{Comparison results: all methods. Stream speed = 200, H=256}
+ \label{fig:comparison200}
+\end{figure}
 
 Figure \ref{fig:comparison200} shows that while \textit{Spark-CluStream} still performs consistently good, \textit{Streaming K-Means} with the \textit{decayFactor} outperformed its relative with the $halfLife$ strategy. Another thing to notice is that \textit{StreamDM-CluStream} still delivered the worse results. 
 
-\begin{figure}[h]
- \centering
- \includegraphics[scale=0.24]{./styles/comparisonNoSnaps2.png}
- \caption{\textit{Spark-CluStream} without snapshots. Stream speed = 200, H=256, m=100}
- \label{fig:comparisonNoSnaps2}
-\end{figure}
-Testing \textit{Spark-CluStream} again without the use of snapshots, showed once more that it delivers better results than \textit{StreamDM-CluStream}, as it can be seen in Figure \ref{fig:comparisonNoSnaps2}, but the difference was reduced significantly. These results might indicate that \textit{StreamDM-CluStream} does not benefit from shorter horizons.
+

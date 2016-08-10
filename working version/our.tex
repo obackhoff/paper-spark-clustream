@@ -67,45 +67,6 @@ The points are separated in two: points within micro-clusters and outliers, it i
 
 These two points are some of the key differences between the original $CluStream$ method and this adaptation. For the original, it is possible to handle point by point as each have different clear time stamps.
 
-Processing the points means two things: to compute the values required to update the micro-clusters, i.e. the \textit{cluster feature vector}, and actually updating the micro-clusters. This is another good opportunity to show a piece of code because it will be important for the performance analysis later on, and also to show how it is possible to reduce the amount of code needed for such operation. First, computing the \textit{cluster feature vector}:
-
-\
-\begin{lstlisting}[language=Scala, tabsize=2, breaklines=true,basicstyle=\footnotesize,frame=lines,numbers=left]
-val aggregateFunction = 
-  (aa: (Vector[Double], Vector[Double], Long), 
-  bb: (Vector[Double], Vector[Double], Long)) =>                     
-  (aa._1 :+ bb._1, aa._2 :+ bb._2, aa._3 + bb._3)
-		
-val sumsAndSumsSquares = 
-  dataIn.mapValues(v => (v, v :* v, 1L))
-    .reduceByKey(aggregateFunction).collect()
-\end{lstlisting}
-
-First a function called $aggregateFunction$ is defined, and this is a generic function that can get passed as an argument to another function. It has the purpose of taking any two given values, in this case two given tuples, and return a tuple that contains the sum of every element of one tuple with the respective element of the other tuple: 
-
-\begin{gather*}
-aggregateFunction =  ((v_1 , u_1 , k_1 ) ,  (v_2 , u_2 , k_2 )) => \\
-(v_1 + v_2 , u_1 + u_2 , k_1 + k_2) 
-\end{gather*}
-
-
-From the assignation process, the points that are going to be processed are located in $dataIn$, which looks as follows:
-
-$$dataIn=\{(id_1,p_1),(id_2,p_2),...\},$$ 
-where, $id_i$ is the unique identifier of the micro-cluster the point $p_i$ belongs to. Then a $map$ is performed only on the "values" of the tuple, considering that Spark can interpret tuples as $(key,value)$ pairs, to replace each point $p_i$ with a tuple containing $p_i$, squared elements of $p_i$ and the \textit{Long} value of 1: 
-
-\begin{gather*}
-dataIn.mapValues( v => (v, v * v, 1) ) = \\
-\{ (id_1, (p_1 , p_1^T I p_1 , 1) ) , (id_2 , (p_2 , p_2^T I p_2 , 1) ) ,... \}
-\end{gather*}
-
-To square the elements means to element-wise square the values of a vector $v$, therefore this is represented by $v^TIv$. This is done in order to perform a $reduceByKey$ operation, which is how Spark combines and operates the distributed elements of an RDD:
-
-$$dataIn.mapValues(...).reduceByKey(aggregateFunction) =$$
-$$\{ (id_1, (p_{1,1} + p_{1,2} + ... , p_{1,1}^T I p_{1,1} + p_{1,2}^T I p_{1,2}  +...  , 1 + 1 + ...) ), ... \}$$
-
-The $(key,value)$ pairs are important here because then all the points belonging to the same micro-cluster are "reduced" together, resulting in tuples containing the element-wise sum, square sum and count of points: $(id,(\overline{CF1^x}_{new}, \overline{CF2^x}_{new}, N_{new}))$. After having computed the values to update the \textit{cluster feature vector} of the micro-clusters which get new points.
-
 
 \subsubsection{Handling outliers}\label{handlingoutliers}
 
@@ -191,15 +152,6 @@ Remarks on the $fakeKMeans$ algorithm:
 \begin{itemize}
  \item The $getCentersFromMC()$ function returns an array with the centroids of the micro-clusters as follows: for each micro-cluser the operation $\frac{1}{N}\overline{CF1^x}$ is performed, where $N$ is the number of points of the micro-cluster in question.
  \item The $getWeightsFromMC()$ function returns an array with the weights of the micro-clusters as follows: for each micro-cluser the operation $\frac{N}{totalPoints}$ is performed, where $N$ is the number of points of the micro-cluster in question and $totalPoints$ is the sum of all $N$'s. By doing this, a frequency distribution is generated.
- \item The $sample()$ function takes the centroids and their weights to randomly sample centroids for the given frequency distribution: the more points a micro-cluster has, the more likely its centroid will be sampled, as shown in Figure \ref{fig:sampling}.
-\end{itemize}
-
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.4]{./styles/sampling.png}
- % approxmlast.png: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
- \caption{Demonstration: sampling the centroids from weights}
- \label{fig:sampling}
-\end{figure}
-
-
+ \item The $sample()$ function takes the centroids and their weights to randomly sample centroids for the given frequency distribution: the more points a micro-cluster has, the more likely its centroid will be sampled.
+ \end{itemize}
+ 
