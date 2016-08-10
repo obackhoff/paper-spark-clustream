@@ -4,24 +4,24 @@ We first compare \our to the original \clustream (Section~\ref{sec:expQuality-vs
 \subsubsection{Quality of $Spark-CluStream$ vs original $CluStream$}
 \label{sec:expQuality-vs-CluStream}
 \paragraph{Results for DS1}
-<<<<<<< HEAD
-We used the same parameters as in~\cite{clustreamOrig}, i.e., $\alpha=2,l=10,InitNumber=2,000,\delta=512,t=2$.
-The parameter $m$, for $m$ last points which is used to estimate the recency of a microcluster, was the only one not provided, we set it to $m=20$. 
-% $m$ is used to determine the approximate recency value as if the time of arrival of the last $m$ points was averaged.
-For $DS1$, both $m$ and $\delta$ are irrelevant as the threshold is never reached (247 time units vs. 512). 
-The number of micro-clusters was set to $q=50$, which is 10 times the number of final clusters ($5$). 
-=======
+% <<<<<<< HEAD
+% We used the same parameters as in~\cite{clustreamOrig}, i.e., $\alpha=2,l=10,InitNumber=2,000,\delta=512,t=2$.
+% The parameter $m$, for $m$ last points which is used to estimate the recency of a microcluster, was the only one not provided, we set it to $m=20$. 
+$m$ is used to determine the approximate recency value as if the time of arrival of the last $m$ points was averaged.
+% For $DS1$, both $m$ and $\delta$ are irrelevant as the threshold is never reached (247 time units vs. 512). 
+% The number of micro-clusters was set to $q=50$, which is 10 times the number of final clusters ($5$). 
+% =======
 The SSQ for $DS1$ is shown in Figure~\ref{fig:DS1quality} for the original $CluStream$ and our $Spark-CluStream$.
 We used the same parameters as in~\cite{clustreamOrig}, i.e., $\alpha=2,l=10,InitNumber=2000,\delta=512,t=2$.
 The parameter $m$, for $m$ last points, was the only one not provided, we set it to $m=20$. $m$ is used to determine the approximate recency value as if the time of arrival of the last $m$ points was averaged.
 For $DS1$, both $m$ and $\delta$ are irrelevant and the reason is that the threshold is never reached (247 time units vs. 512). 
 The number of micro-clusters was set to $q=50$, 10 times the number of final clusters ($5$). 
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 % \color{red}@Omar: they suggest 50 and 5 in the original paper?\color{black}\color{blue}@Eirini: yes, they  cluster for k=5  and they recommend 10 times more mcs, they prove that with more than 10 times you don't gain much\color{black}. 
 % Also, \textit{fakeKMeans()} used 5,000 sampled points. 
 % We report the average results over 4 runs for our \our.
 
-<<<<<<< HEAD
+% <<<<<<< HEAD
 In Table~\ref{tab:DS1quality} we show the SSQ scores for our \our and the results from \emph{CluStream} as reported in~\cite{CluStream} - these are approximate results ``extracted" from the original paper.
 % The SSQ for $DS1$ is shown in Figure~\ref{fig:DS1quality} for the original $CluStream$ and our $Spark-CluStream$.
 % For the original $CluStream$ we show the results from the original paper~\cite{clustreamOrig}
@@ -32,10 +32,10 @@ In Table~\ref{tab:DS1quality} we show the SSQ scores for our \our and the result
 % Comparing the results, it is possible to observe their similarities. We don't know the exact values for Figure~\ref{fig:2000orig} but it suffices to compare the magnitudes of the average SSQ. 
 % The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{CluStream} are shown in Table~\ref{tab:DS1quality}.
 Although we don't know the exact values for \emph{CluStream}, we can see that the magnitudes of the average SSQ are comparable.
-=======
-For the original $CluStream$ we show the results from the original paper \cite{clustreamOrig}, as well as the results for \our. Comparing these results, it is possible to observe their similarities. The exact values for \cite{clustreamOrig} are unknown but it suffices to compare the magnitudes of the average SSQ. 
-The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{clustreamOrig} are shown in Table~\ref{tab:DS1quality}.
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% =======
+% For the original $CluStream$ we show the results from the original paper \cite{clustreamOrig}, as well as the results for \our. Comparing these results, it is possible to observe their similarities. The exact values for \cite{clustreamOrig} are unknown but it suffices to compare the magnitudes of the average SSQ. 
+% The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{clustreamOrig} are shown in Table~\ref{tab:DS1quality}.
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 
 \begin{table*}[t]
 \centering
@@ -48,12 +48,12 @@ $Spark-CluStream$ & $3.099\times10^5$ & $6.676\times10^{12}$ & $7.833\times10^5$
   \label{tab:DS1quality}
 \end{table*}
 
-<<<<<<< HEAD
+% <<<<<<< HEAD
 % \color{red}@Omar: Can you change the y-axis labels in the second image to match the format of the first? \color{black}
 % \color{red}Also, can you change the x-axis label of the second image to "Stream (\#points at clustering time))
 % \color{black}\color{blue}DONE\color{black}
-=======
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% =======
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 
 %     \begin{figure*}[!ht]
 %         \begin{minipage}[l]{1.0\columnwidth}
@@ -77,10 +77,10 @@ $Spark-CluStream$ & $3.099\times10^5$ & $6.676\times10^{12}$ & $7.833\times10^5$
 % \addtocounter{figure}{-1}
 % 
 \paragraph{Results for DS2}
-<<<<<<< HEAD
+% <<<<<<< HEAD
 % The SSQ for $DS2$ is shown in Figure~\ref{fig:DS2quality}.
 %     \begin{figure*}[!ht]
-=======
+% =======
 % The SSQ for $DS2$ is shown in Figure \ref{fig:DS2quality}.
 %  \begin{figure*}[!ht]
 >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
@@ -99,25 +99,25 @@ $Spark-CluStream$ & $3.099\times10^5$ & $6.676\times10^{12}$ & $7.833\times10^5$
 %         \caption{Original $CluStream$ vs SPARK-Clustream. $DS2$ (Stream speed $v$ = 200, $H$=256).}
 %         \label{fig:DS2quality}
 %     \end{figure*}
-<<<<<<< HEAD
-=======
+% <<<<<<< HEAD
+% =======
 %     
 %  \addtocounter{figure}{-1}
 %  
  
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 Parameters were set as for $DS1$.
 % The measurement is the SSQ again and the same circumstances apply for this case as in the first one with the difference that here $\delta$ and $m$ are relevant. The parameter $m$ is again chosen to be 20: if 200 points are processed every time unit and there are 50 micro-clusters, assuming all 200 points should be distributed uniformly at least every 5 time units leads to $5\frac{200}{50}=20$. An in-depth analysis of the behavior of \textit{CluStream} for different $\delta$'s and $m$'s is out of the scope of this work. 
 % Again, the comparison is for the average SSQ. 
-<<<<<<< HEAD
+% <<<<<<< HEAD
 % The test ran 4 times for \textit{Spark-CluStream} to average the results in both cases, $DS1$ and $DS2$. \color{red} Same for DS1? You run the streams x4 and reported the avg values over the 4 runs?\color{black}\color{blue}Yes, the same process was used\color{black}
 The exact scores of \our~and the approximate values from \clustream~are reported %shown in Figure~\ref{fig:DS2quality}; again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on~\cite{CluStream} are shown 
 in Table~\ref{tab:DS2quality}. Again the quality scores are comparable, i.e., our \our~achieves similar quality clusterings to the original \clustream.
-=======
-The test ran 4 times for \textit{Spark-CluStream} to average the results in both cases, $DS1$ and $DS2$. 
-Again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on \cite{clustreamOrig} are shown in Table \ref{tab:DS2quality}.
+% =======
+% The test ran 4 times for \textit{Spark-CluStream} to average the results in both cases, $DS1$ and $DS2$. 
+% Again, they perform similarly. The exact SSQ scores for $Spark-CluStream$ and the approximated ones from $CluStream$ based on \cite{clustreamOrig} are shown in Table \ref{tab:DS2quality}.
 
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 \begin{table*}[t]
 \centering
 \begin{tabular}{|l|l|l|l|l|}\hline
@@ -132,11 +132,11 @@ Spark-CluStream & $5.402\times10^{13}$ & $5.143\times10^{4}$ & $1.892\times10^{1
 %------------------------------------------------------------------------------------------------------
 \subsubsection{$Spark-CluStream$ vs other clustering approaches in SPARK}
 \label{sec:expQuality-vs-SPARK}
-<<<<<<< HEAD
+% <<<<<<< HEAD
 We compare our \our against available solutions for stream clustering in Spark and in particular against\textit{Streaming K-Means}~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html} and\textit{StreamDM-CluStream}~\footnote{More information: http://huawei-noah.github.io/streamDM/}.
-=======
-We compare our \our  against available solutions for stream clustering in Spark and in particular against \textit{Streaming K-Means} and \textit{StreamDM-CluStream}.
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% =======
+% We compare our \our  against available solutions for stream clustering in Spark and in particular against \textit{Streaming K-Means} and \textit{StreamDM-CluStream}.
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 % , which is another adaptation of \textit{CluStream} for Spark. 
 We report here on their clustering quality, the efficiency issue is discussed in Section~\ref{sec:expScalability}.
 
@@ -146,7 +146,7 @@ We report here on their clustering quality, the efficiency issue is discussed in
 
 % Before looking at the results, here are some key considerations for the other methods:
 
-<<<<<<< HEAD
+% <<<<<<< HEAD
 % \begin{itemize}%  \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
 %  \begin{itemize}
 %   \item In order to have comparable results, the time horizon $H$ must be interpreted differently. There are two strategies: the first option is to use the parameter \textit{halfLife}, which can be configured to let the algorithm to completely adjust the clusters after $HL$ points or batches.
@@ -157,20 +157,20 @@ We report here on their clustering quality, the efficiency issue is discussed in
 %   \item This adaptation of \textit{CluStream} does not include the offline part as a separate module, meaning that it does not save snapshots and therefore it has to perform the macro-clustering process for every batch. This brings some limitations, the horizon $H$ no longer has the same meaning: the $\delta$ parameter is used instead as an equivalent, relying on the micro-clustering part only and its ability to delete and create new micro-clusters.
 % \end{itemize}
 % \end{itemize}
-\color{black}
-=======
-\begin{itemize}
- \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
- \begin{itemize}
-  \item In order to have comparable results, the time horizon $H$ must be interpreted differently. There are two strategies: the first option is to use the parameter \textit{halfLife}, which can be configured to let the algorithm to completely adjust the clusters after $HL$ points or batches.
-  \item The alternative would be to set the $decayFactor$, which sets the weight for the clusters of the "old" data (only the current batch is considered "new" data) to calculate the new centroids.
- \end{itemize}
- \item \textit{StreamDM-CluStream~\footnote{More information: http://huawei-noah.github.io/streamDM/}}:
- \begin{itemize}
-  \item This adaptation of \textit{CluStream} does not include the offline part as a separate module, meaning that it does not save snapshots and therefore it has to perform the macro-clustering process for every batch. This brings some limitations, the horizon $H$ no longer has the same meaning: the $\delta$ parameter is used instead as an equivalent, relying on the micro-clustering part only and its ability to delete and create new micro-clusters.
-\end{itemize}
-\end{itemize}
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% \color{black}
+% =======
+% \begin{itemize}
+%  \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
+%  \begin{itemize}
+%   \item In order to have comparable results, the time horizon $H$ must be interpreted differently. There are two strategies: the first option is to use the parameter \textit{halfLife}, which can be configured to let the algorithm to completely adjust the clusters after $HL$ points or batches.
+%   \item The alternative would be to set the $decayFactor$, which sets the weight for the clusters of the "old" data (only the current batch is considered "new" data) to calculate the new centroids.
+%  \end{itemize}
+%  \item \textit{StreamDM-CluStream~\footnote{More information: http://huawei-noah.github.io/streamDM/}}:
+%  \begin{itemize}
+%   \item This adaptation of \textit{CluStream} does not include the offline part as a separate module, meaning that it does not save snapshots and therefore it has to perform the macro-clustering process for every batch. This brings some limitations, the horizon $H$ no longer has the same meaning: the $\delta$ parameter is used instead as an equivalent, relying on the micro-clustering part only and its ability to delete and create new micro-clusters.
+% \end{itemize}
+% \end{itemize}
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 
 \paragraph{Results on $DS1$}
 For the $DS1$ stream the results are shown in Figure~\ref{fig:comparison2000}. %The number of clusters $k$ is always 5 for this dataset in all the experiments.
@@ -184,7 +184,7 @@ The \textit{decayFactor} is set to 0, i.e., only the last 2,000 points will infl
  \caption{Average SSQ for different stream clustering methods in SPARK. $DS1$ (Stream speed $v$ = 2,000, $H$=1)}
  \label{fig:comparison2000}
 \end{figure}
-<<<<<<< HEAD
+% <<<<<<< HEAD
 %
 As we can see, our \our~delivers results which are very close to those of \textit{Streaming K-Means}, whereas \textit{Streaming K-Means} with the \textit{decayFactor} (DF) is the best.
 % expected to do well on this test as it could be configured to cluster exactly as it was intended for this dataset. 
@@ -192,12 +192,12 @@ The surprising results come from \textit{StreamDM-CluStream}, which is the worse
 % To understand this behavior, we performed another experiment with \our~without snapshots. For both methods we used a horizon $H = 1$ and $m=100$. 
 % \color{red}@Omar: what is m?\color{black}\color{blue}UPDATED THE EXPLANATION ABOVE \color{black}.
 To further investigate this, we conduct another experiment where we compare \our~without snapshots against \textit{StreamDM-CluStream}. The results are shown in Figure \ref{fig:comparisonNoSnaps}.
-=======
+% =======
 
-From Figure~\ref{fig:comparison2000} it can be seen that our \our~delivers results which are very close to those of \textit{Streaming K-Means}. Also, \textit{Streaming K-Means} with the \textit{decayFactor} (DF) is expected to do well on this test as it could be configured to cluster exactly as it was intended for this dataset. 
-The surprising results come from \textit{StreamDM-CluStream}, as it performs worse than the rest of the methods, especially for the last two points, i.e.,  at $160k$ and $320k$.
-To understand this behavior, we performed another experiment with \our~without snapshots. For both methods we used a horizon $H = 1$ and $m=100$.
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% From Figure~\ref{fig:comparison2000} it can be seen that our \our~delivers results which are very close to those of \textit{Streaming K-Means}. Also, \textit{Streaming K-Means} with the \textit{decayFactor} (DF) is expected to do well on this test as it could be configured to cluster exactly as it was intended for this dataset. 
+% The surprising results come from \textit{StreamDM-CluStream}, as it performs worse than the rest of the methods, especially for the last two points, i.e.,  at $160k$ and $320k$.
+% To understand this behavior, we performed another experiment with \our~without snapshots. For both methods we used a horizon $H = 1$ and $m=100$.
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 \begin{figure}[h]
  \centering
  \includegraphics[scale=0.24]{./styles/comparisonNoSnaps.png}
@@ -209,7 +209,7 @@ As we can see, \our outperforms \textit{StreamDM-CluStream} even if we remove th
 
 %-------------------------------------
 \paragraph{Results on $DS2$}
-<<<<<<< HEAD
+% <<<<<<< HEAD
 For the $DS2$ stream the results are shown in Figure~\ref{fig:comparison200}.
 % Repeating the experiment for the stream with a speed of 200 and a horizon $H=256$ revealed unexpected results. 
 All parameters remained the same for all methods, except for the $halfLife$ parameter for \textit{Streaming K-Means}, which is set to  $halfLife=25,600$ ($200\cdot 256=51,200$).
@@ -244,31 +244,31 @@ We repeat the without-snapshot experiment, the results are shown in Figure \ref{
  \label{fig:comparisonNoSnaps2}
 \end{figure}
 As we can see, \our~delivers better results than \textit{StreamDM-CluStream} but the difference is reduced significantly comparing to $DS1$. These results might indicate that \textit{StreamDM-CluStream}  benefits from larger horizons.
-=======
-For the $DS2$ stream the results are shown in Figure~\ref{fig:comparison2000}.
+% =======
+% For the $DS2$ stream the results are shown in Figure~\ref{fig:comparison2000}.
 
-Repeating the experiment for the stream with a speed of 200 and a horizon $H=256$ revealed unexpected results. While most parameters for all methods remained the same, for \textit{Streaming K-Means} a new $halfLife$ has to be calculated: multiplying the speed of the stream to the horizon, $200\cdot 256=51200$ shows how many points of the stream are supposed to be clustered at each time, indicating that the parameter should be set to $halfLife=25600$. 
-
-
-The \textit{decayFactor} strategy at first seems that does not work for such experiment, but considering that the total number of entries is known and exactly the marks at which the clustering process happens, it is possible to calculate an average value to use as a $decayFactor$: 
-
-\begin{itemize}
- \item At 150000 points: $\frac{51200}{150000} \approx 0.3413$, which is the ratio of the points to cluster to the total number of points at that particular time.
- \item At 150000 points: $\frac{51200}{250000} \approx 0.2048$.
- \item At 150000 points: $\frac{51200}{350000} \approx 0.1462$.
- \item At 150000 points: $\frac{51200}{450000} \approx 0.1137$.
-\end{itemize}
-
-Averaging those ratios leads to a \textit{decayFactor = 0.2015}, which is a way to determine how important the old data is in comparison to the new one.
-
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.16]{./styles/comparison200.png}
- \caption{Comparison results: all methods. Stream speed = 200, H=256}
- \label{fig:comparison200}
-\end{figure}
-
-Figure \ref{fig:comparison200} shows that while \textit{Spark-CluStream} still performs consistently good, \textit{Streaming K-Means} with the \textit{decayFactor} outperformed its relative with the $halfLife$ strategy. Another thing to notice is that \textit{StreamDM-CluStream} still delivered the worse results. 
+% Repeating the experiment for the stream with a speed of 200 and a horizon $H=256$ revealed unexpected results. While most parameters for all methods remained the same, for \textit{Streaming K-Means} a new $halfLife$ has to be calculated: multiplying the speed of the stream to the horizon, $200\cdot 256=51200$ shows how many points of the stream are supposed to be clustered at each time, indicating that the parameter should be set to $halfLife=25600$. 
 
 
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+% The \textit{decayFactor} strategy at first seems that does not work for such experiment, but considering that the total number of entries is known and exactly the marks at which the clustering process happens, it is possible to calculate an average value to use as a $decayFactor$: 
+
+% \begin{itemize}
+%  \item At 150000 points: $\frac{51200}{150000} \approx 0.3413$, which is the ratio of the points to cluster to the total number of points at that particular time.
+%  \item At 150000 points: $\frac{51200}{250000} \approx 0.2048$.
+%  \item At 150000 points: $\frac{51200}{350000} \approx 0.1462$.
+%  \item At 150000 points: $\frac{51200}{450000} \approx 0.1137$.
+% \end{itemize}
+
+% Averaging those ratios leads to a \textit{decayFactor = 0.2015}, which is a way to determine how important the old data is in comparison to the new one.
+
+% \begin{figure}[h!]
+%  \centering
+%  \includegraphics[scale=0.16]{./styles/comparison200.png}
+%  \caption{Comparison results: all methods. Stream speed = 200, H=256}
+%  \label{fig:comparison200}
+% \end{figure}
+
+% Figure \ref{fig:comparison200} shows that while \textit{Spark-CluStream} still performs consistently good, \textit{Streaming K-Means} with the \textit{decayFactor} outperformed its relative with the $halfLife$ strategy. Another thing to notice is that \textit{StreamDM-CluStream} still delivered the worse results. 
+
+
+% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
