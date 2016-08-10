@@ -22,46 +22,6 @@ This method is built over a few ideas that need to be conceptualized, which will
  \item \textbf{Pyramidal time frame}: micro-clusters are stored periodically following a pyramidal pattern. This allows a nice tradeoff between the ability to store large amounts of information while giving the user the possible to work with different time horizons without loosing too much precision. The statistical summaries stored are used by the offline component to compute finally the macro-clusters which are the actual clusters the user intended to get.
 \end{itemize}
 
-It is assumed that a data stream comes in the form of multi-dimensional records $\bar X_1 ... \bar X_k ...$ where $\bar X_i = (x^1_i ... x^d_i)$.
-
-\begin{definition}\cite{clustreamOrig}
-
-A micro-cluster for a set of d-dimensional points $X_{i_1} ...X_{i_n}$ with time stamps
-$T_{i_1} ...T_{i_n}$ is defined as the $2 \cdot d + 3)$ tuple $(\overline{CF2^x},\overline{CF1^x},CF2^t,CF1^t,n)$, wherein $\overline{CF2^x}$ and $\overline{CF1^x}$ each correspond to a vector of d entries. The definition of each of these entries is as follows: 
-
-\begin{itemize}
- \item For each dimension, the sum of the squares of the data values is maintained in $\overline{CF2^x}$. Thus, $\overline{CF2^x}$ contains d values. The p-th entry of $\overline{CF2^x}$ is equal to $\sum^n_{j=1} (x^p_{i_j})^2$. 
- \item For each dimension, the sum of the data values is maintained in $\overline{CF1^x}$. Thus, $\overline{CF1^x}$ contains d values. The p-th entry of $\overline{CF1^x}$ is equal to $\sum^n_{j=1} x^p_{i_j}$.
- \item The sum of the squares of the time stamps $T_{i_1} ...T_{i_n}$ is maintained in $CF2^t$.
- \item The sum of the time stamps $T_{i_1} ...T_{i_n}$ is maintained in $CF1^t$.
- \item The number of data points is maintained in n.
-\end{itemize}
-
-\end{definition}
-
-The idea behind the pyramidal time frame is that \textit{snapshots} of the micro-clusters can be stored in an efficient way, such that if $t_c$ is the current clock time and $h$ is the history length, it is still possible to find an accurate approximation of the higher level clusters (macro-clusters) for a user specified time horizon $(t_c - h, t_c)$.
-
-In this time frame, the snapshots are stored at different levels of granularity that depends upon the \textit{recency} of them. These are classified in different orders which can vary from 1 to $log(T)$, where $T$ is the clock time elapsed since the beginning of the stream. The snapshots are maintained as follows:
-
-\begin{itemize}
- \item A snapshot of the $i$-th order occur at time intervals $\alpha^i$, for $\alpha \geq 1$. In other words, a snapshot occurs when $T \bmod \alpha^i = 0$.
- \item At any given moment, only the last $\alpha^l + 1$ snapshot for any given order are stored, where $l \geq 1$ is a modifier which increases the accuracy of the time horizon with the cost of storing more snapshots. This allows redundancy, but from an implementation point of view only one snapshot must be kept.
- \item For a data stream, the maximum number of snapshots stored is $(\alpha^l + 1)\cdot log_{\alpha}(T)$.
- \item For any specified time window $h$, it is possible to find at least one stored snapshot within $2\cdot h$ units of the current time\footnote{The proof can be found in the original article\cite{clustreamOrig}.}.
- \item The time horizon $h$ can be approximated to a factor of $1 + (1/ \alpha^{l-1})$, whose second summand is also referred as the accuracy of the time horizon.
-\end{itemize}
-
-\begin{figure}[h!]
- \centering
- \includegraphics[scale=0.75]{./styles/pyramidalFrame.png}
- % pyramidalFrame.png: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
- \caption{Example of snapshots stored for $\alpha = 2$ and $l=2$}
- \label{table:timeFrame}
-\end{figure}
-
-With the help of Figure \ref{table:timeFrame} it is possible to observe how this pyramidal time frame works: snapshots of order 0 occur at odd time units, these need to be retained as are non-redundant; snapshots of order 1 which occur at time units not divisible by 4 are non-redundant and must be retained; in general, all the snapshots of order $i$ which are not divisible by $\alpha^{i+1}$ are non-redundant. Another thing to note is that whenever a new snapshot of a particular order is stored, the oldest one from that order needs to be deleted.
-
-To illustrate the effect on the accuracy of storing more snapshots, the following example is given: supposing that a stream is running for 100 years, with a time granularity of 1 second. The total number of snapshots stored would be $(2^2 + 1)\cdot log_{\alpha}(100*365*24*60*60) \approx 158$ with an accuracy of $1/ 2^{2-1} = 0.5$ or 50\% of a given time horizon $h$. Increasing the modifier $l$ to 10 would yield to $(2^{10} + 1)\cdot log_{\alpha}(100*365*24*60*60) \approx 32343$ maximum snapshots stored with an accuracy of $1/ 2^{10-1} \approx 0.00195$ or $\approx$ 0.2\% which is a significant improvement.
 
 \subsubsection{Maintaining the micro-clusters}
 
@@ -73,25 +33,13 @@ Whenever a point (outlier) does not fulfill the mentioned condition, then a new 
 
 The macro-clustering part is done by selecting a time window and then performing a modified version of \textit{K-Means} to cluster the center of the current micro-clusters using the size as weights. 
 
-Selecting a time window implies using two snapshots to determine what happened in such time window: the most recent snapshot is used as the base and the older one is used to determine overlapping micro-clusters. Once this is determined, a simple sustraction of their properties is performed to obtain the correct set of micro-clusters to use in the macro-clustering step.
-
 \subsection{SPARK}
-\textit{Apache Spark} is an open source framework developed in the AMPLab at the University of California, campus Berkeley\cite{SparkResearch}. It is a fast and general engine for large-scale data processing, as they describe it themselves. The original goal was to design a new programming model that supports a wider class of applications than MapReduce and at the same time keeping the fault tolerance property of it. They claim MapReduce is inefficient for applications that require a multi-pass implementation and a low latency data sharing across parallel operations, which are common in data analytics nowadays, such as: 
-
-\begin{itemize}
- \item Iterative algorithms: many machine learning and graph algorithms.
- \item Interactive data mining: multiple queries on data loaded into RAM.
- \item Streaming applications: some require an aggregate sate over time.
-\end{itemize}
-
+\textit{Apache Spark} is an open source framework developed in the AMPLab at the University of California.
 Traditionally, MapReduce and DAG engines are based on an acyclic data flow, which makes them non optimal for these applications listed above. In this flow, data has to be read from a stable storage system, like a distributed file system, and then processed on a series of jobs only to be written back to the stable storage. This process of reading and writing data on each step of the workflow causes a significant rise in computational cost.
 
 The solution proposed offers \textit{resilient distributed datasets (RDDs)} to overcome this issue efficiently. RDDs are stored in memory between queries (no need of replication) and they can rebuild themselves in case of failure as they remember how they were originally built from other datasets by transformations such as \textit{map, group, join}.
 
 \subsection{SPARK streaming}
-
-For this project, Spark streaming plays an important role as it takes a raw data stream and transforms it so that it is possible to process it within the framework. A raw stream of data can come in different forms and through different channels: from a very simple file stream, where whenever a new file is added to a specific location it is recognized as the input, a socket stream where the data comes through the network using a TCP protocol and also integrates with more elaborated sources such as \textit{Kafka, Flume, Twitter, HDFS/S3,} etc.
-
 
 \begin{figure}[h!]
  \centering

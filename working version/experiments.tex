@@ -1,9 +1,18 @@
 \subsection{Experiments setting}
 For the experiments we used the Network Intrusion dataset\footnote{Source: http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html}, which consists of 494,021 instances. For the analysis, we used only the numerical attributes (\#34 out of \#43 attributes).
 We vary the speed of the stream and the horizon and we derive two different stream configurations.
+<<<<<<< HEAD
 The first one, denoted as $DS1$, has a speed $v=2,0000$ points per timestamp, which implies that it lasts for $\frac{494,021}{2,000} \approx 247$ time units, and a horizon $H=1$. 
 The second one, denoted as $DS2$, has a speed of $v=200$ points per timestamp, thus lasting for a period of $\frac{494021}{200} \approx 2470$ time points, and a horizon $H=256$.
 To evaluate the clustering quality, we report in Section~\ref{sec:expQuality} on the sum of square distances (SSQ) from the points to their nearest micro-cluster, using Euclidean distance as the distance function, within a horizon $H$. Efficiency and scalability is discussed in Section~\ref{sec:expScalability}. 
+=======
+The first one, denoted as $DS1$, has a speed $v=2,0000$ points per timestamp and a horizon $H=1$. This implies that the stream lasts for $\frac{494,021}{2,000} \approx 247$ time units. 
+The second one, denoted as $DS2$, has a speed of $v=200$ points per timestamp and a horizon $H=256$. Therefore the stream lasts for a period of $\frac{494021}{200} \approx 2470$ time points.
+
+To evaluate the clustering quality, we report in Section~\ref{sec:expQuality} on the sum of squares distance (SSQ) from the points to their nearest micro-cluster, using Euclidean distance as the distance function, within a horizon $H$.
+
+With respect to the efficiency aspect, we report on it in Section~\ref{sec:expScalability}. 
+>>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
 
 %------------------------------------------------------------------------------------------------------
 \subsection{Clustering quality}
