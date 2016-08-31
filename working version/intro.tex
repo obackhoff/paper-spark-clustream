@@ -1,22 +1,17 @@
-The analysis of data streams comes along with important questions: what kind of
-data is it? What important information is contained in it? How does the stream
-evolve? The key question for this project among those is the latter, i.e. dealing with
-the evolution of the stream, because prior to the development of the CluStream \cite{clustreamOrig}
-method there was not an easy to answer that question as it was one of the first to
-tackle this issue.
+The analysis of data streams comes with important questions: what kind of
+data is it? What important information is contained in the stream? How does the stream
+evolve? 
+The later comprises the key question for our work, i.e., dealing with the evolution of the stream. 
+We focus on the clustering task, i.e., how can we maintain a valid clustering structure in a volatile and evolving data stream 
+environment.
+ 
+Clustering is one of the main tasks in data mining, also referred as an exploratory task as it allows us to get to know our data. 
+The goal is to  find groups of objects that share similar characteristics. 
+% One can also relate this task to unsupervised machine learning, which intends to classify data when it lacks of
+% labels, i.e., when the data instance does not indicate to which category it belongs.
+One of the most popular algorithms for stream clustering is CluStream~\cite{clustreamOrig}, proposed in 2003, which provides more information than previously 
+developed algorithms for data stream clustering by that time. This is achieved by separating the clustering process into two parts, an offline part that summarizes the stream in an online setting through appropriate summaries, the so-called microclusters, and an offline part that derives the final clusters upon these summaries. The first part is online, whereas the second is offline.
 
-Clustering is one of the main tasks in data mining, also often referred as an
-exploratory subtask of it. As the name implies, the objective is to find clusters, i.e.,
-collections of objects that share common properties. One can also relate this task
-to unsupervised machine learning, which intends to classify data when it lacks of
-labels, i.e., when the data instance does not indicate to which category it belongs.
-The CluStream method was developed in 2003 \cite{clustreamOrig} and its main purpose is to pro-
-vide more information than previously developed algorithms for data stream clus-
-tering by that time. It provides a solution for handling streams of data indepen-
-dently from the one that finds the final clusters. It consists of two phases (passes)
-instead of one; the first one deals with the incoming data and stores relevant in-
-formation over time and the second one is in charge of the clustering using the
-previously generated information. 
 % In other words, i) For each batch of data, statistically relevant ùsummariesù of the data are cre-
 % ated and stored at a defined pace. This storing pace follows a specific storage
 % scheme such that the disk space requirement reduces drastically; this is nec-
@@ -29,3 +24,7 @@ previously generated information.
 % horizon/window can be chosen in order to analyze the data in different time
 % periods, giving the possibility of a better understanding of the evolution of
 % the data.
+Recently, distributed computing frameworks are employed to deal with big data challenges and many algorithms have been adapted to these settings.
+In this work, we adapt CluStream to the Apache Spark framework in order to obtain a distributed stream clustering algorithm that can deal with clustering over big data streams.
+As CluStream was not designed for a distributed setting, the adaptation is not straightforward and involves re-designing core parts of the algorithm.
+

@@ -455,21 +455,16 @@ Anonymous Institution\\
 
 
 \begin{abstract}
-Two of the most popular strategies to mine big data are distributed comput-
-ing and stream mining. The purpose of this thesis is to incorporate both together
-bringing a competitive stream clustering method into a modern framework for
-distributed computing, namely, Apache Spark. The method in question is CluS-
-tream, a stream clustering method which separates the clustering process into two
-different phases: an online phase which handles the incoming stream, generating
-statistical summaries of the data and an offline phase which takes those summaries
-to generate the final clusters. These summaries also contain valuable information
-which can be used for further analysis. The main goal is to adapt this method in
-such a framework in order to obtain a scalable stream clustering method which is
-open source and can be used by the Apache Spark community.
+Two of the most popular approaches for dealing with big data are distributed computing and stream mining. 
+In this paper, we incorporate both approaches in order to bring a competitive stream clustering algorithm, namely CluStream, 
+into a modern framework for distributed computing, namely, Apache Spark. 
+CluStream is one of the most popular clustering approaches for stream clustering and the one that introduced the online-offline mining process: the online phase summarizes the stream through
+statistical summaries and the offline phase generates the final clusters upon these summaries. 
+We obtain a scalable stream clustering method which is open source and can be used by the Apache Spark community.
 \end{abstract}
 
 \begin{IEEEkeywords}
-big data streams; stream mining; stream clustering; CluStream
+big data streams; stream mining; stream clustering; CluStream; Apache Spark
 \end{IEEEkeywords}
 
 
