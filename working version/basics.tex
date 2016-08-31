@@ -1,5 +1,4 @@
 \subsection{CluStream}
-
 \textit{CluStream} is a method developed in the Watson Research Center at IBM and the University of Illinois, UIUC. This method presented a different approach on the matter of clustering streams of data with respect to a modified version of \textit{K-Means} which was adapted to work also with data streams. The main difference relies on the separation of the clustering process into two parts: one which would handle the data stream itself gathering only statistically relevant information (online part) and another which actually process the results of the former to produce the actual clusters wanted (offline part). 
 
 Separating the clustering process provides the user several advantages, among others:
@@ -60,3 +59,24 @@ Figure \ref{fig:streamFlow} shows the general idea of Spark streaming\cite{spark
  \label{fig:dstream}
 \end{figure}
 
+
+
+
+\subsection{Existing CluStream implementations in distributed computing frameworks}
+\textit{CluStream} has been implemented in different types of software and libraries, being \textit{SAMOA - Scalable Advanced Massive Online Analysis} one of the options. It is also a distributed computing implementation of the algorithm. The difference is that it is not implemented in \textit{Spark}, but rather in a \textit{Distributed Stream Processing Engine} which adapts the \textit{MapReduce} approach to parallel stream processing\cite{samoa}.
+
+Main differences with this adaptation: 
+
+\begin{itemize}
+ \item It does not include an offline macro-clustering phase.
+ \item It is developed in \textit{Java} and not designed to work with Spark.
+\end{itemize}
+
+% \subsection{StreamDM}
+\textit{StreamDM} is a collection of algorithms for mining big data streams \footnote{As it is stated by them here: http://huawei-noah.github.io/streamDM/}. One of the included methods for stream clustering is \textit{CluStream}. This collection of algorithms is developed for Spark.
+
+Main differences with this adaptation: 
+
+\begin{itemize}
+ \item It does not include an offline macro-clustering phase.
+\end{itemize}
