@@ -3,7 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: literature.bib.bib
-Warning--I didn't find a database entry for "CluStream"
 Warning--to sort, need author or key in sparkStreaming
 Warning--to sort, need author or key in mlib
 Warning--to sort, need author or key in spark
@@ -13,7 +12,7 @@ Warning--to sort, need author or key in scikit-mbk
 Warning--to sort, need author or key in typesafesurvey
 You've used 18 entries,
             2118 wiz_defined-function locations,
-            605 strings with 7108 characters,
+            603 strings with 7090 characters,
 and the built_in function-call counts, 5306 in all, are:
 = -- 530
 > -- 176
@@ -52,4 +51,4 @@ warning$ -- 7
 while$ -- 39
 width$ -- 20
 write$ -- 194
-(There were 8 warnings)
+(There were 7 warnings)
