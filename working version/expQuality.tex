@@ -112,37 +112,23 @@ We compare our \our against available solutions for stream clustering in Spark a
 % , which is another adaptation of \textit{CluStream} for Spark. 
 We report here on their clustering quality, the efficiency issue is discussed in Section~\ref{sec:expScalability}.
 
-% We roughly overview these methods hereafter.
+We roughly overview these methods hereafter.
 
 % The setup and the dataset are the same as in \ref{validation}, as having already verified results provides the possibility of using those tests to directly compare the results against the other methods. Again, the used measurement is the sum of squares (SSQ).
 
 % Before looking at the results, here are some key considerations for the other methods:
 
-% <<<<<<< HEAD
-% \begin{itemize}%  \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
+% \begin{itemize}  \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
 %  \begin{itemize}
 %   \item In order to have comparable results, the time horizon $H$ must be interpreted differently. There are two strategies: the first option is to use the parameter \textit{halfLife}, which can be configured to let the algorithm to completely adjust the clusters after $HL$ points or batches.
-%   \item The alternative would be to set the $decayFactor$, which sets the weight for the clusters of the "old" data (only the current batch is considered "new" data). This is a number between 0 and 1, such that if it is 0 then only the clusters for "new" data determine the final clusters, if it is set to 1, then the clusters of past data will have the same influence on the final clusters. It is important to notice that this \textit{decayFactor} also considers the number of points of the "new" and "old" data, so in the last case, after a long time, "new" data will have little influence as the number of points of the current batch will be considerable smaller than the points clustered so far.
+%   \item The alternative would be to set the $decayFactor$, which sets the weight for the clusters of the "old" data (only the current batch is considered "new" data). This is a number between 0 and 1, such that if it is 0 then only the clusters for "new" data determine the final clusters, if it is set to 1, then the clusters of past data will have the same influence on the final clusters. As it also considers the number of points, after some time "old" data will be considerably larger than new batches.
 %  \end{itemize}
 %  \item \textit{StreamDM-CluStream~\footnote{More information: http://huawei-noah.github.io/streamDM/}}:
 %  \begin{itemize}
 %   \item This adaptation of \textit{CluStream} does not include the offline part as a separate module, meaning that it does not save snapshots and therefore it has to perform the macro-clustering process for every batch. This brings some limitations, the horizon $H$ no longer has the same meaning: the $\delta$ parameter is used instead as an equivalent, relying on the micro-clustering part only and its ability to delete and create new micro-clusters.
 % \end{itemize}
 % \end{itemize}
-% \color{black}
-% =======
-% \begin{itemize}
-%  \item \textit{Streaming K-Means~\footnote{More information: https://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html}}:
-%  \begin{itemize}
-%   \item In order to have comparable results, the time horizon $H$ must be interpreted differently. There are two strategies: the first option is to use the parameter \textit{halfLife}, which can be configured to let the algorithm to completely adjust the clusters after $HL$ points or batches.
-%   \item The alternative would be to set the $decayFactor$, which sets the weight for the clusters of the "old" data (only the current batch is considered "new" data) to calculate the new centroids.
-%  \end{itemize}
-%  \item \textit{StreamDM-CluStream~\footnote{More information: http://huawei-noah.github.io/streamDM/}}:
-%  \begin{itemize}
-%   \item This adaptation of \textit{CluStream} does not include the offline part as a separate module, meaning that it does not save snapshots and therefore it has to perform the macro-clustering process for every batch. This brings some limitations, the horizon $H$ no longer has the same meaning: the $\delta$ parameter is used instead as an equivalent, relying on the micro-clustering part only and its ability to delete and create new micro-clusters.
-% \end{itemize}
-% \end{itemize}
-% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+
 
 \paragraph{Results on $DS1$}
 For the $DS1$ stream the results are shown in Figure~\ref{fig:comparison2000}. %The number of clusters $k$ is always 5 for this dataset in all the experiments.
