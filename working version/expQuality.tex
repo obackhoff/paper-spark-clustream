@@ -7,7 +7,7 @@ We first compare \our to the original \clustream (Section~\ref{sec:expQuality-vs
 % <<<<<<< HEAD
 % We used the same parameters as in~\cite{clustreamOrig}, i.e., $\alpha=2,l=10,InitNumber=2,000,\delta=512,t=2$.
 % The parameter $m$, for $m$ last points which is used to estimate the recency of a microcluster, was the only one not provided, we set it to $m=20$. 
-$m$ is used to determine the approximate recency value as if the time of arrival of the last $m$ points was averaged.
+
 % For $DS1$, both $m$ and $\delta$ are irrelevant as the threshold is never reached (247 time units vs. 512). 
 % The number of micro-clusters was set to $q=50$, which is 10 times the number of final clusters ($5$). 
 % =======
@@ -22,7 +22,7 @@ The number of micro-clusters was set to $q=50$, 10 times the number of final clu
 % We report the average results over 4 runs for our \our.
 
 % <<<<<<< HEAD
-In Table~\ref{tab:DS1quality} we show the SSQ scores for our \our and the results from \emph{CluStream} as reported in~\cite{CluStream} - these are approximate results ``extracted" from the original paper.
+In Table~\ref{tab:DS1quality} we show the SSQ scores for our \our and the results from \emph{CluStream} as reported in~\cite{clustreamOrig} - these are approximate results ``extracted" from the original paper.
 % The SSQ for $DS1$ is shown in Figure~\ref{fig:DS1quality} for the original $CluStream$ and our $Spark-CluStream$.
 % For the original $CluStream$ we show the results from the original paper~\cite{clustreamOrig}
 %  - in Figure~\ref{fig:2000orig} we also see the performance of the STREAM algorithm, a modified version of $k$-Means for data 
@@ -77,35 +77,7 @@ $Spark-CluStream$ & $3.099\times10^5$ & $6.676\times10^{12}$ & $7.833\times10^5$
 % \addtocounter{figure}{-1}
 % 
 \paragraph{Results for DS2}
-% <<<<<<< HEAD
-% The SSQ for $DS2$ is shown in Figure~\ref{fig:DS2quality}.
-%     \begin{figure*}[!ht]
-% =======
-% The SSQ for $DS2$ is shown in Figure \ref{fig:DS2quality}.
-%  \begin{figure*}[!ht]
->>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
-%         \begin{minipage}[l]{1.0\columnwidth}
-%             \centering
-%              \includegraphics[width=0.9\columnwidth]{./styles/200h256-orig.png}
-%             \caption{SSQ for the original $CluStream$~\cite{clustreamOrig} vs STREAM~\cite{}}\label{fig:200h256-orig}
-%         \end{minipage}
-%         \hfill{}
-%         \begin{minipage}[r]{1.0\columnwidth}
-%             \centering
-%             \includegraphics[width=0.9\columnwidth]{./styles/200h256.png}
-%             \caption{SSQ for our $Spark-CluStream$}\label{fig:200h256}
-%         \end{minipage}
-%         \captionsetup{labelformat=empty}
-%         \caption{Original $CluStream$ vs SPARK-Clustream. $DS2$ (Stream speed $v$ = 200, $H$=256).}
-%         \label{fig:DS2quality}
-%     \end{figure*}
-% <<<<<<< HEAD
-% =======
-%     
-%  \addtocounter{figure}{-1}
-%  
- 
-% >>>>>>> b48fee025a90694a4c09982cc46b20463adc1770
+
 Parameters were set as for $DS1$.
 % The measurement is the SSQ again and the same circumstances apply for this case as in the first one with the difference that here $\delta$ and $m$ are relevant. The parameter $m$ is again chosen to be 20: if 200 points are processed every time unit and there are 50 micro-clusters, assuming all 200 points should be distributed uniformly at least every 5 time units leads to $5\frac{200}{50}=20$. An in-depth analysis of the behavior of \textit{CluStream} for different $\delta$'s and $m$'s is out of the scope of this work. 
 % Again, the comparison is for the average SSQ. 
