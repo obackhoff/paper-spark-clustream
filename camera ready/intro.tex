@@ -1,0 +1,31 @@
+The analysis of data streams comes with important questions: what kind of
+data is it? What important information is contained in the stream? How does the stream
+evolve? 
+The later comprises the key question for our work, i.e., dealing with the evolution of the stream. 
+We focus on the clustering task, i.e., how can we maintain a valid clustering structure in a volatile and evolving data stream 
+environment.
+ 
+Clustering is one of the main tasks in data mining, also referred as an exploratory task as it allows us to get to know our data. 
+The goal is to  find groups of objects that share similar characteristics. 
+% One can also relate this task to unsupervised machine learning, which intends to classify data when it lacks of
+% labels, i.e., when the data instance does not indicate to which category it belongs.
+One of the most popular algorithms for stream clustering is CluStream~\cite{clustreamOrig}, proposed in 2003, which provides more information than previously developed algorithms for data stream clustering by that time. 
+
+%This is achieved by separating the clustering process into two parts, an offline part that summarizes the stream in an online setting through appropriate summaries, the so-called microclusters, and an offline part that derives the final clusters upon these summaries. The first part is online, whereas the second is offline.
+
+% In other words, i) For each batch of data, statistically relevant ùsummariesù of the data are cre-
+% ated and stored at a defined pace. This storing pace follows a specific storage
+% scheme such that the disk space requirement reduces drastically; this is nec-
+% essary as in most cases for data streams one does not want to store everything
+% that arrives, one reason being the big data requires large and expensive com-
+% putational resources (processing power and storage).
+% ii) On user demand, the stored ùsummaries can be used for the end clustering
+% task as they include all necessary information to achieve accurate results.
+% Additionally, as these summaries are stored over time, a user defined time
+% horizon/window can be chosen in order to analyze the data in different time
+% periods, giving the possibility of a better understanding of the evolution of
+% the data.
+Recently, distributed computing frameworks are employed to deal with big data challenges and many algorithms have been adapted to these settings.
+In this work, we adapt CluStream to the Apache Spark framework in order to obtain a distributed stream clustering algorithm that can deal with clustering over big data streams.
+As CluStream was not designed for a distributed setting, the adaptation is not straightforward and involves re-designing core parts of the algorithm.
+

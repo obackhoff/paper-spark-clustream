@@ -1,0 +1,82 @@
+\subsection{CluStream}
+\textit{CluStream} is a method developed in the Watson Research Center at IBM and the University of Illinois, UIUC. This method presented a different approach on the matter of clustering streams of data with respect to a modified version of \textit{K-Means} which was adapted to work also with data streams. The main difference relies on the separation of the clustering process into two parts: one which would handle the data stream itself gathering only statistically relevant information (online part) and another which actually process the results of the former to produce the actual clusters wanted (offline part). 
+
+Separating the clustering process provides the user several advantages, among others:
+
+\begin{itemize}
+ \item by saving only statistical data, rather than the original content, it is possible to save physical storage space (e.g. hard drive space) and therefore reducing costs and allowing a wider range in time to be clustered.
+ 
+ \item The method also allows the analysis of the evolution of the data, as the necessary information for that is contained in the stored statistical information.
+ 
+ \item Because the two parts operate independently it allows the user to select a time horizon, or even a time window, to perform the offline clustering part using the stored statistical information.
+\end{itemize}
+
+\subsubsection{The CluStream framework}
+
+This method is built over a few ideas that need to be conceptualized, which will answer fundamental questions and set up a basis of terminology useful along this work.
+
+\begin{itemize}
+ \item \textbf{Micro-Clusters}: that is the given name for the statistical information summaries that is computed during the online component. They are a temporal extension of \textit{cluster feature vectors}\cite{zhang96birch}, which benefit from an additive feature that makes them a natural choice for the data stream problem\cite{clustreamOrig}.
+ 
+ \item \textbf{Pyramidal time frame}: micro-clusters are stored periodically following a pyramidal pattern. This allows a nice tradeoff between the ability to store large amounts of information while giving the user the possible to work with different time horizons without loosing too much precision. The statistical summaries stored are used by the offline component to compute finally the macro-clusters which are the actual clusters the user intended to get.
+\end{itemize}
+
+
+\subsubsection{Maintaining the micro-clusters}
+
+Whenever a new point arrives, it is necessary to find its nearest micro-cluster. It is possible to calculate an average radious or \textit{RMSD}, only to then compare the distance to the point to a factor of it: when the distance between a point and its nearest micro-cluster is smaller or equal to the average radiuos (of the micro-cluster in question) times a user defined factor, then this point is added to the micro-cluster. Adding a point to a micro-cluster means that the properties of the micro-cluster change, such as RMSD and size (number of points).
+
+Whenever a point (outlier) does not fulfill the mentioned condition, then a new micro-cluster has to be created in order to give this point a chance as a potential new cluster. In order to do so, an older micro-cluster has to be deleted or two micro-clusters have to be merged. To determine which solution is appropriate a recency value for each micro-cluster has to be determined\footnote{See \cite{clustreamOrig} for more details.} and until all the micro-clusters which have an older recency value than a user specified parameter are deleted, it is possible to start merging the micro-clusters which are closest to one another.
+
+\subsubsection{Offline macro-clusterig}
+
+The macro-clustering part is done by selecting a time window and then performing a modified version of \textit{K-Means} to cluster the center of the current micro-clusters using the size as weights. 
+
+\subsection{SPARK}
+\textit{Apache Spark} is an open source framework developed in the AMPLab at the University of California.
+Traditionally, MapReduce and DAG engines are based on an acyclic data flow, which makes them non optimal for these applications listed above. In this flow, data has to be read from a stable storage system, like a distributed file system, and then processed on a series of jobs only to be written back to the stable storage. This process of reading and writing data on each step of the workflow causes a significant rise in computational cost.
+
+The solution proposed offers \textit{resilient distributed datasets (RDDs)} to overcome this issue efficiently. RDDs are stored in memory between queries (no need of replication) and they can rebuild themselves in case of failure as they remember how they were originally built from other datasets by transformations such as \textit{map, group, join}.
+
+\subsection{SPARK streaming}
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.45]{./styles/streaming-flow.png}
+ % streaming-flow.png: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+ \caption{Flow of data in Spark streaming}
+ \label{fig:streamFlow}
+\end{figure}
+
+Figure \ref{fig:streamFlow} shows the general idea of Spark streaming\cite{sparkStreaming}, a raw stream is linked to this module and it converts it to batches of data at user-defined intervals. These batches of data are then treated as RDDs, thus it gets distributed over the cluster where Spark runs. The abstraction of a data stream in Spark is called \textit{DStream}, which stands for Discretized Stream, and is continuous series of RDDs. In a \textit{DStream}, each RDD contains data from a specific interval of time, as it can be seen in Figure \ref{fig:dstream}.
+
+
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.45]{./styles/streaming-dstream.png}
+ % streaming-flow.png: 0x0 pixel, 300dpi, 0.00x0.00 cm, bb=
+ \caption{DStreams are Spark streaming's abstraction of a data stream}
+ \label{fig:dstream}
+\end{figure}
+
+
+
+
+\subsection{Existing CluStream implementations in distributed computing frameworks}
+\textit{CluStream} has been implemented in different types of software and libraries, being \textit{SAMOA - Scalable Advanced Massive Online Analysis} one of the options. It is also a distributed computing implementation of the algorithm. The difference is that it is not implemented in \textit{Spark}, but rather in a \textit{Distributed Stream Processing Engine} which adapts the \textit{MapReduce} approach to parallel stream processing\cite{samoa}.
+
+Main differences with this adaptation: 
+
+\begin{itemize}
+ \item It does not include an offline macro-clustering phase.
+ \item It is developed in \textit{Java} and not designed to work with Spark.
+\end{itemize}
+
+% \subsection{StreamDM}
+\textit{StreamDM} is a collection of algorithms for mining big data streams \footnote{As it is stated by them here: http://huawei-noah.github.io/streamDM/}. One of the included methods for stream clustering is \textit{CluStream}. This collection of algorithms is developed for Spark.
+
+Main differences with this adaptation: 
+
+\begin{itemize}
+ \item It does not include an offline macro-clustering phase.
+\end{itemize}

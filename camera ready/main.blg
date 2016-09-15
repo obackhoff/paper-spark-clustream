@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Arch Linux)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: literature.bib.bib
+Warning--to sort, need author or key in sparkStreaming
+Warning--to sort, need author or key in mlib
+Warning--to sort, need author or key in spark
+Warning--to sort, need author or key in sparkStreamingKmeans
+Warning--to sort, need author or key in SparkResearch
+Warning--to sort, need author or key in scikit-mbk
+Warning--to sort, need author or key in typesafesurvey
+You've used 18 entries,
+            2118 wiz_defined-function locations,
+            603 strings with 7090 characters,
+and the built_in function-call counts, 5306 in all, are:
+= -- 530
+> -- 176
+< -- 6
++ -- 75
+- -- 55
+* -- 290
+:= -- 788
+add.period$ -- 60
+call.type$ -- 18
+change.case$ -- 79
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 234
+empty$ -- 506
+format.name$ -- 55
+if$ -- 1218
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 13
+newline$ -- 94
+num.names$ -- 24
+pop$ -- 141
+preamble$ -- 1
+purify$ -- 63
+quote$ -- 0
+skip$ -- 172
+stack$ -- 0
+substring$ -- 264
+swap$ -- 67
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 68
+warning$ -- 7
+while$ -- 39
+width$ -- 20
+write$ -- 194
+(There were 7 warnings)
