@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.29)  31 AUG 2016 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.29)  17 SEP 2016 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -534,39 +534,33 @@ OML/cmm/m/it/10 CluStream$ \OT1/ptm/m/it/10 vs orig-i-nal
 File: ./styles/comparison2000.png Graphic file (type png)
 
 <use ./styles/comparison2000.png>
-Package pdftex.def Info: ./styles/comparison2000.png used on input line 137.
+Package pdftex.def Info: ./styles/comparison2000.png used on input line 136.
 (pdftex.def)             Requested size: 270.6101pt x 171.02252pt.
 
-Overfull \hbox (26.69885pt too wide) in paragraph at lines 137--138
+Overfull \hbox (26.69885pt too wide) in paragraph at lines 136--137
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 <./styles/comparisonNoSnaps.png, id=33, 1088.3862pt x 648.9846pt>
 File: ./styles/comparisonNoSnaps.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps.png>
-Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 157.
+Package pdftex.def Info: ./styles/comparisonNoSnaps.png used on input line 156.
 
 (pdftex.def)             Requested size: 261.21802pt x 155.75948pt.
 
-Overfull \hbox (17.30676pt too wide) in paragraph at lines 157--158
+Overfull \hbox (17.30676pt too wide) in paragraph at lines 156--157
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 <./styles/comparison200.png, id=34, 1734.48pt x 892.5345pt>
 File: ./styles/comparison200.png Graphic file (type png)
 
 <use ./styles/comparison200.png>
-Package pdftex.def Info: ./styles/comparison200.png used on input line 186.
+Package pdftex.def Info: ./styles/comparison200.png used on input line 185.
 (pdftex.def)             Requested size: 260.16077pt x 133.87439pt.
 
-Overfull \hbox (16.24951pt too wide) in paragraph at lines 186--188
+Overfull \hbox (16.24951pt too wide) in paragraph at lines 185--187
  [][] 
  []
 
@@ -578,11 +572,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./styles/comparisonNoSnaps2.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps2.png>
-Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 196
+Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 195
 .
 (pdftex.def)             Requested size: 261.21802pt x 155.75948pt.
 
-Overfull \hbox (17.30676pt too wide) in paragraph at lines 196--197
+Overfull \hbox (17.30676pt too wide) in paragraph at lines 195--196
  [][] 
  []
 
@@ -704,7 +698,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  7182 strings out of 493013
- 105400 string characters out of 6139317
+ 105393 string characters out of 6139317
  246960 words of memory out of 5000000
  10572 multiletter control sequences out of 15000+600000
  44367 words of font info for 89 fonts, out of 8000000 for 9000
@@ -722,7 +716,7 @@ r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 764896 bytes).
+Output written on main.pdf (8 pages, 764844 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
