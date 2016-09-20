@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.29)  17 SEP 2016 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.29)  20 SEP 2016 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,11 +419,14 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 443.
  (./intro.tex)
 (./basics.tex
+Underfull \vbox (badness 2781) has occurred while \output is active []
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 7.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 7.
@@ -441,13 +444,17 @@ File: ./styles/streaming-flow.png Graphic file (type png)
 Package pdftex.def Info: ./styles/streaming-flow.png used on input line 45.
 (pdftex.def)             Requested size: 232.20135pt x 51.81711pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <./styles/streaming-dstream.png, id=13, 525.6438pt x 115.1502pt>
 File: ./styles/streaming-dstream.png Graphic file (type png)
 
 <use ./styles/streaming-dstream.png>
 Package pdftex.def Info: ./styles/streaming-dstream.png used on input line 56.
 (pdftex.def)             Requested size: 236.53752pt x 51.81711pt.
-) (./our.tex
+) (./our.tex [2 <./styles/streaming-flow.png> <./styles/streaming-dstream.png>]
+
 Underfull \hbox (badness 3039) in paragraph at lines 14--15
 []\OT1/ptm/m/it/10 rdd: RDD[breeze.linalg.Vector[Double]], mcInfo:
  []
@@ -458,71 +465,35 @@ Overfull \hbox (6.1179pt too wide) in paragraph at lines 21--22
 ce\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p; mc[]:centroid\OT1/cmr/m/n/10 )$ 
  []
 
-[2 <./styles/streaming-flow.png> <./styles/streaming-dstream.png>]
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2015/06/04 1.6 listings language file
-)
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 37.
 
-(/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 38.
-
-(/usr/share/texmf-dist/tex/latex/psnfss/omlptm.fd
-File: omlptm.fd 
-)
-
-LaTeX Font Warning: Font shape `OML/ptm/bx/n' undefined
-(Font)              using `OML/ptm/m/it' instead
-(Font)              for symbol `textgreater' on input line 38.
-
-LaTeX Font Info:    Font shape `OML/ptm/m/it' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 38.
-LaTeX Font Info:    Font shape `OML/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 43.
-
-Underfull \hbox (badness 1831) in paragraph at lines 74--75
+Underfull \hbox (badness 1831) in paragraph at lines 76--77
 \OT1/ptm/m/n/10 RMSD for its near-est micro-cluster in the ar-ray
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 76--77
+Underfull \hbox (badness 6445) in paragraph at lines 78--79
 []\OT1/ptm/m/n/10 If none of the pre-vi-ous sce-nar-ios are vi-able,
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 76--77
+Underfull \hbox (badness 3872) in paragraph at lines 78--79
 \OT1/ptm/m/n/10 then the two micro-clusters that are clos-est to
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 76--77
+Underfull \hbox (badness 1509) in paragraph at lines 78--79
 \OT1/ptm/m/n/10 each other get merged, free-ing one spot to cre-
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 76--77
+Underfull \hbox (badness 1874) in paragraph at lines 78--79
 \OT1/ptm/m/n/10 ate the new micro-cluster. This is the the most
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 76--77
+Underfull \hbox (badness 4084) in paragraph at lines 78--79
 \OT1/ptm/m/n/10 com-pu-ta-tion-ally ex-pen-sive sce-nario. The func-tion
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]) (./experiments.tex (./expQuality.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
@@ -530,7 +501,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--6
 OML/cmm/m/it/10 CluStream$ \OT1/ptm/m/it/10 vs orig-i-nal
  []
 
-[4] <./styles/comparison2000.png, id=32, 1021.1751pt x 645.3711pt>
+[4] <./styles/comparison2000.png, id=30, 1021.1751pt x 645.3711pt>
 File: ./styles/comparison2000.png Graphic file (type png)
 
 <use ./styles/comparison2000.png>
@@ -541,7 +512,7 @@ Overfull \hbox (26.69885pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
-<./styles/comparisonNoSnaps.png, id=33, 1088.3862pt x 648.9846pt>
+<./styles/comparisonNoSnaps.png, id=31, 1088.3862pt x 648.9846pt>
 File: ./styles/comparisonNoSnaps.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps.png>
@@ -553,7 +524,10 @@ Overfull \hbox (17.30676pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
-<./styles/comparison200.png, id=34, 1734.48pt x 892.5345pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./styles/comparison200.png, id=32, 1734.48pt x 892.5345pt>
 File: ./styles/comparison200.png Graphic file (type png)
 
 <use ./styles/comparison200.png>
@@ -567,8 +541,7 @@ Overfull \hbox (16.24951pt too wide) in paragraph at lines 185--187
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5 <./styles/comparison2000.png> <./styles/comparisonNoSnaps.png>]
-<./styles/comparisonNoSnaps2.png, id=42, 1088.3862pt x 648.9846pt>
+<./styles/comparisonNoSnaps2.png, id=33, 1088.3862pt x 648.9846pt>
 File: ./styles/comparisonNoSnaps2.png Graphic file (type png)
 
 <use ./styles/comparisonNoSnaps2.png>
@@ -580,8 +553,11 @@ Overfull \hbox (17.30676pt too wide) in paragraph at lines 195--196
  [][] 
  []
 
-) (./expScalability.tex
-<./styles/perf20-2.png, id=43, 844.1136pt x 619.3539pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./expScalability.tex [5 <./styles/comparison2000.png> <./styles/comparisonNo
+Snaps.png>] <./styles/perf20-2.png, id=43, 844.1136pt x 619.3539pt>
 File: ./styles/perf20-2.png Graphic file (type png)
 
 <use ./styles/perf20-2.png>
@@ -625,8 +601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 amDM-
  []
 
-[6 <./styles/comparison200.png> <./styles/comparisonNoSnaps2.png>]
-<./styles/singlemachine.png, id=52, 514.5624pt x 393.8715pt>
+<./styles/singlemachine.png, id=48, 514.5624pt x 393.8715pt>
 File: ./styles/singlemachine.png Graphic file (type png)
 
 <use ./styles/singlemachine.png>
@@ -642,23 +617,20 @@ Underfull \hbox (badness 3108) in paragraph at lines 86--87
 0 Spark-
  []
 
-)) (./conclusions.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-(./main.bbl
+)) [6 <./styles/comparison200.png> <./styles/comparisonNoSnaps2.png>]
+(./conclusions.tex) (./main.bbl
 Underfull \hbox (badness 6268) in paragraph at lines 4--7
 []\OT1/ptm/m/n/9 Apache spark.  http://spark.apache.org/.  Ac-cessed:
  []
 
-[7 <./styles/perf20-2.png> <./styles/perf20-100.png> <./styles/perf200-2.png> <
-./styles/perf200-100.png>]
+
 Overfull \hbox (33.44319pt too wide) in paragraph at lines 20--23
 []\OT1/ptm/m/n/9 Apache spark, stream-ing.  http://spark.apache.org/docs/latest
 /streaming-
  []
 
-
+[7 <./styles/perf20-2.png> <./styles/perf20-100.png> <./styles/perf200-2.png> <
+./styles/perf200-100.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
 []\OT1/ptm/m/n/9 Databricks, stream-ing k-means.
  []
@@ -691,32 +663,29 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8 <./styles/perfComp100.png> <./styles/singlemachine.png>] (./main.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+[8 <./styles/perfComp100.png> <./styles/singlemachine.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7182 strings out of 493013
- 105393 string characters out of 6139317
- 246963 words of memory out of 5000000
- 10572 multiletter control sequences out of 15000+600000
+ 6685 strings out of 493013
+ 100011 string characters out of 6139317
+ 175094 words of memory out of 5000000
+ 10091 multiletter control sequences out of 15000+600000
  44367 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,10n,42p,880b,1441s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-d
-ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
-es/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
-are/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 764840 bytes).
+ 40i,10n,39p,880b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr
+/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb
+i8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
+mf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (8 pages, 754943 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

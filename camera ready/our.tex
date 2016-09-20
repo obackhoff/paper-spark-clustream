@@ -30,26 +30,28 @@ The maintenance of the micro-clusters starts with this operation. After initiali
  \end{algorithmic}
 \end{algorithm}
 
-Finding the nearest micro-clusters is an operation of complexity $O(n*q*d)$, where $n$ is the number of points, $q$ the number of micro-clusters and $d$ the dimension of the points; $q$ and $d$ remain constant during runtime but $n$ might vary. Algorithm \ref{alg:assign} describes a simple search for the minimum distance for every point in the RDD to the micro-clusters. This is also a good opportunity to show how this works using Spark and \textit{Scala}:
+Finding the nearest micro-clusters is an operation of complexity $O(n*q*d)$, where $n$ is the number of points, $q$ the number of micro-clusters and $d$ the dimension of the points; $q$ and $d$ remain constant during runtime but $n$ might vary. Algorithm \ref{alg:assign} describes a simple search for the minimum distance for every point in the RDD to the micro-clusters. 
 
-\
-\begin{lstlisting}[language=Scala, tabsize=2, breaklines=true,basicstyle=\footnotesize,frame=lines,numbers=left]
-def assignToMicroCluster(rdd: RDD[Vector[Double]], mcInfo: Array[(MicroClusterInfo, Int)]): RDD[(Int, Vector[Double])] = {
-    rdd.map { a =>
-      var minDist = Double.PositiveInfinity
-      var minIndex = Int.MaxValue
-      for (mc <- mcInfo) {
-        val dist = squaredDistance(a, mc._1.centroid)
-        if (dist < minDist) {
-          minDist = dist
-          minIndex = mc._2
-        }}
-      (minIndex, a)
-    }}
-\end{lstlisting}
-
-
-Spark uses this $map$ operation to serialize the function passed so that all nodes in the cluster get the same instruction, this is exactly how computations are parallelized  within this framework. At this point, every node performs this operation to find the nearest micro-cluster for all the points they locally have.
+% This is also a good opportunity to show how this works using Spark and \textit{Scala}:
+% 
+% \
+% \begin{lstlisting}[language=Scala, tabsize=2, breaklines=true,basicstyle=\footnotesize,frame=lines,numbers=left]
+% def assignToMicroCluster(rdd: RDD[Vector[Double]], mcInfo: Array[(MicroClusterInfo, Int)]): RDD[(Int, Vector[Double])] = {
+%     rdd.map { a =>
+%       var minDist = Double.PositiveInfinity
+%       var minIndex = Int.MaxValue
+%       for (mc <- mcInfo) {
+%         val dist = squaredDistance(a, mc._1.centroid)
+%         if (dist < minDist) {
+%           minDist = dist
+%           minIndex = mc._2
+%         }}
+%       (minIndex, a)
+%     }}
+% \end{lstlisting}
+% 
+% 
+% Spark uses this $map$ operation to serialize the function passed so that all nodes in the cluster get the same instruction, this is exactly how computations are parallelized  within this framework. At this point, every node performs this operation to find the nearest micro-cluster for all the points they locally have.
 
 
 
