@@ -51,7 +51,8 @@ Finding the nearest micro-clusters is an operation of complexity $O(n*q*d)$, whe
 % \end{lstlisting}
 % 
 % 
-% Spark uses this $map$ operation to serialize the function passed so that all nodes in the cluster get the same instruction, this is exactly how computations are parallelized  within this framework. At this point, every node performs this operation to find the nearest micro-cluster for all the points they locally have.
+% Spark uses this $map$ operation to serialize the function passed so that all nodes in the cluster get the same instruction, this is exactly how computations are parallelized  within this framework.
+At this point, every node performs this operation to find the nearest micro-cluster for all the points they locally have.
 
 
 

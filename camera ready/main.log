@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.29)  20 SEP 2016 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.29)  20 SEP 2016 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,32 +466,32 @@ ce\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p; mc[]:centroid\OT1/cmr/m/n/10 )$
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 76--77
+Underfull \hbox (badness 1831) in paragraph at lines 77--78
 \OT1/ptm/m/n/10 RMSD for its near-est micro-cluster in the ar-ray
  []
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 78--79
+Underfull \hbox (badness 6445) in paragraph at lines 79--80
 []\OT1/ptm/m/n/10 If none of the pre-vi-ous sce-nar-ios are vi-able,
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 78--79
+Underfull \hbox (badness 3872) in paragraph at lines 79--80
 \OT1/ptm/m/n/10 then the two micro-clusters that are clos-est to
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 78--79
+Underfull \hbox (badness 1509) in paragraph at lines 79--80
 \OT1/ptm/m/n/10 each other get merged, free-ing one spot to cre-
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 78--79
+Underfull \hbox (badness 1874) in paragraph at lines 79--80
 \OT1/ptm/m/n/10 ate the new micro-cluster. This is the the most
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 78--79
+Underfull \hbox (badness 4084) in paragraph at lines 79--80
 \OT1/ptm/m/n/10 com-pu-ta-tion-ally ex-pen-sive sce-nario. The func-tion
  []
 
@@ -532,9 +532,9 @@ File: ./styles/comparison200.png Graphic file (type png)
 
 <use ./styles/comparison200.png>
 Package pdftex.def Info: ./styles/comparison200.png used on input line 185.
-(pdftex.def)             Requested size: 260.16077pt x 133.87439pt.
+(pdftex.def)             Requested size: 277.52248pt x 142.80844pt.
 
-Overfull \hbox (16.24951pt too wide) in paragraph at lines 185--187
+Overfull \hbox (33.61122pt too wide) in paragraph at lines 185--187
  [][] 
  []
 
@@ -547,43 +547,62 @@ File: ./styles/comparisonNoSnaps2.png Graphic file (type png)
 <use ./styles/comparisonNoSnaps2.png>
 Package pdftex.def Info: ./styles/comparisonNoSnaps2.png used on input line 195
 .
-(pdftex.def)             Requested size: 261.21802pt x 155.75948pt.
+(pdftex.def)             Requested size: 272.09589pt x 162.24574pt.
 
-Overfull \hbox (17.30676pt too wide) in paragraph at lines 195--196
+Overfull \hbox (28.18463pt too wide) in paragraph at lines 195--196
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./expScalability.tex [5 <./styles/comparison2000.png> <./styles/comparisonNo
-Snaps.png>] <./styles/perf20-2.png, id=43, 844.1136pt x 619.3539pt>
+) (./expScalability.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./styles/comparison2000.png> <./styles/comparisonNoSnaps.png>]
+<./styles/perf20-2.png, id=43, 844.1136pt x 619.3539pt>
 File: ./styles/perf20-2.png Graphic file (type png)
 
 <use ./styles/perf20-2.png>
 Package pdftex.def Info: ./styles/perf20-2.png used on input line 9.
-(pdftex.def)             Requested size: 219.51863pt x 161.06601pt.
+(pdftex.def)             Requested size: 268.30386pt x 196.86476pt.
+
+Overfull \hbox (24.39261pt too wide) in paragraph at lines 9--10
+ [][] 
+ []
 
 <./styles/perf20-100.png, id=44, 844.1136pt x 619.3539pt>
 File: ./styles/perf20-100.png Graphic file (type png)
 
 <use ./styles/perf20-100.png>
 Package pdftex.def Info: ./styles/perf20-100.png used on input line 16.
-(pdftex.def)             Requested size: 219.51863pt x 161.06601pt.
+(pdftex.def)             Requested size: 268.30386pt x 196.86476pt.
+
+Overfull \hbox (24.39261pt too wide) in paragraph at lines 16--17
+ [][] 
+ []
 
 <./styles/perf200-2.png, id=45, 832.5504pt x 607.7907pt>
 File: ./styles/perf200-2.png Graphic file (type png)
 
 <use ./styles/perf200-2.png>
 Package pdftex.def Info: ./styles/perf200-2.png used on input line 30.
-(pdftex.def)             Requested size: 219.51863pt x 160.24763pt.
+(pdftex.def)             Requested size: 268.30386pt x 195.86957pt.
+
+Overfull \hbox (24.39261pt too wide) in paragraph at lines 30--31
+ [][] 
+ []
 
 <./styles/perf200-100.png, id=46, 844.1136pt x 619.3539pt>
 File: ./styles/perf200-100.png Graphic file (type png)
 
 <use ./styles/perf200-100.png>
 Package pdftex.def Info: ./styles/perf200-100.png used on input line 37.
-(pdftex.def)             Requested size: 219.51863pt x 161.06601pt.
+(pdftex.def)             Requested size: 268.30386pt x 196.86476pt.
+
+Overfull \hbox (24.39261pt too wide) in paragraph at lines 37--38
+ [][] 
+ []
 
 <./styles/perfComp100.png, id=47, 513.117pt x 409.0482pt>
 File: ./styles/perfComp100.png Graphic file (type png)
@@ -611,14 +630,17 @@ Package pdftex.def Info: ./styles/singlemachine.png used on input line 77.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+[6 <./styles/comparison200.png> <./styles/comparisonNoSnaps2.png>]
 Underfull \hbox (badness 3108) in paragraph at lines 86--87
 []\OT1/ptm/m/n/10 Another con-sid-er-a-tion to be made, is that \OT1/ptm/m/it/1
 0 Spark-
  []
 
-)) [6 <./styles/comparison200.png> <./styles/comparisonNoSnaps2.png>]
-(./conclusions.tex) (./main.bbl
+)) (./conclusions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./styles/perf20-2.png> <./styles/perf20-100.png> <./styles/perf200-2.png> 
+<./styles/perf200-100.png>]) (./main.bbl
 Underfull \hbox (badness 6268) in paragraph at lines 4--7
 []\OT1/ptm/m/n/9 Apache spark.  http://spark.apache.org/.  Ac-cessed:
  []
@@ -629,8 +651,7 @@ Overfull \hbox (33.44319pt too wide) in paragraph at lines 20--23
 /streaming-
  []
 
-[7 <./styles/perf20-2.png> <./styles/perf20-100.png> <./styles/perf200-2.png> <
-./styles/perf200-100.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
 []\OT1/ptm/m/n/9 Databricks, stream-ing k-means.
  []
@@ -685,7 +706,7 @@ pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb
 i8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 754943 bytes).
+Output written on main.pdf (8 pages, 754929 bytes).
 PDF statistics:
  110 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
